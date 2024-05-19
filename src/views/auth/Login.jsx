@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { login } from "../../utils/auth";
-import BaseHeader from "../partials/BaseHeader";
-import BaseFooter from "../partials/BaseFooter";
+// import BaseHeader from "../partials/BaseHeader";
+// import BaseFooter from "../partials/BaseFooter";
 import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
@@ -26,7 +26,7 @@ function Login() {
 
   return (
     <>
-      <BaseHeader />
+      {/* <BaseHeader /> */}
 
       <section
         className="container d-flex flex-column vh-100"
@@ -131,7 +131,7 @@ function Login() {
         </div>
       </section>
 
-      <BaseFooter />
+      {/* <BaseFooter /> */}
     </>
   );
 }
