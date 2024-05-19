@@ -75,9 +75,24 @@ export const isAccessTokenExpired = (access_token) => {
   try {
     const decodeToken = jwt_decode(access_token);
     return decodeToken.exp < Date.now() / 1000;
-  } 
-  catch (error) {
+  } catch (error) {
     console.log(error);
     return true;
+  }
+};
+
+export const setUser = async () => {
+  const access_token = Cookie.get("access_token");
+  const refresh_token = Cookie.get("refresh_token");
+  if (!access_token || !refresh_token) {
+    alert("Токенов нет в Куках!");
+    return;
+  }
+
+  if (isAccessTokenExpired(access_token)) {
+    const response = getRefreshedToken(refresh_token);
+    setAuthUser(response.access, response.refresh);
+  } else {
+    setAuthUser(access_token, refresh_token);
   }
 };
