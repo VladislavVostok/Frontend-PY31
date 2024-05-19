@@ -22,24 +22,62 @@ export const setAuthUser = (access_token, refresh_token) => {
   useAuthStore.getState().setLoading(false);
 };
 
-export const login = async(email, password) => {
-    try{
-        const {data, status} = await axios.post('user/token/', {
-            email, 
-            password,
-        });
+export const login = async (email, password) => {
+  try {
+    const { data, status } = await axios.post("user/token/", {
+      email,
+      password,
+    });
 
-        if(status === 200){
-            setAuthUser(data.access, data.refresh);
-            alert("Доступ разрешён");
-        }
-        return {data, error: null }
-    
+    if (status === 200) {
+      setAuthUser(data.access, data.refresh);
+      alert("Доступ разрешён");
     }
-    catch (error){
-        return {
-            data:null,
-            error: error.response.data?.detail || "Что-то другоу отвалилось!"
-        };
-    }
-}
+    return { data, error: null };
+  } catch (error) {
+    return {
+      data: null,
+      error: error.response.data?.detail || "Что-то другоу отвалилось!",
+    };
+  }
+};
+
+export const register = async (full_name, email, password, password2) => {
+  try {
+    const { data } = await axios.post("user/register/", {
+      full_name,
+      email,
+      password,
+      password2,
+    });
+    await login(email, password);
+    alert("Регистрация прошла успешно, вы залогинились!");
+    return { data, error: null };
+  } catch (error) {
+    return {
+      data: null,
+      error:
+        `${error.response.data.full_name} - ${error.response.data.email}` ||
+        "Что-то отвалилось!",
+    };
+  }
+};
+
+export const getRefreshToken = async () => {
+  const refresh_token = Cookies.get("refresh_token");
+  axios.post("user/token/refresh/", {
+    refresh: refresh_token,
+  });
+  return response.data;
+};
+
+export const isAccessTokenExpired = (access_token) => {
+  try {
+    const decodeToken = jwt_decode(access_token);
+    return decodeToken.exp < Date.now() / 1000;
+  } 
+  catch (error) {
+    console.log(error);
+    return true;
+  }
+};
