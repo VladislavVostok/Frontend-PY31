@@ -44,7 +44,7 @@ export const login = async (email, password) => {
   }
 };
 
-export const register = async (full_name, email, password, password2) => {
+export  const register = async (full_name, email, password, password2) => {
   try {
     const { data } = await apiInstance.post("user/register/", {
       full_name,
