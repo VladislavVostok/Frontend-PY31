@@ -1,60 +1,209 @@
-import React from "react"
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuthStore } from "../../store/auth";
 
-export function BaseHeader()  {
-    <header>
-    <div class="px-3 py-2 text-bg-dark border-bottom">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
+function BaseHeader() {
+    const [searchQuery, setSearchQuery] = useState("");
+    const navigate = useNavigate();
 
-          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-            <li>
-              <a href="#" class="nav-link text-secondary">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                Dashboard
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                Orders
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
-                Customers
-              </a>
-            </li>
-          </ul>
+    const handleSearchSubmit = () => {
+        navigate(`/search/?search=${searchQuery}`);
+    };
+
+    // eslint-disable-next-line no-unused-vars
+    const [isLoggedIn, user] = useAuthStore((state) => [state.isLoggedIn, state.user]);
+
+    return (
+        <div>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div className="container">
+                    <Link className="navbar-brand" to="/">
+                        Python31
+                    </Link>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon" />
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/pages/contact-us/">
+                                    {" "}
+                                    <i className="fas fa-phone"></i> Связаться с нами
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/pages/about-us/">
+                                    <i className="fas fa-address-card"></i> О нас
+                                </Link>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <a
+                                    className="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <i className="fas fa-chalkboard-user"></i> Учитель
+                                </a>
+                                <ul className="dropdown-menu">
+                                    <li>
+                                        <Link
+                                            className="dropdown-item"
+                                            to={`/instructor/dashboard/`}
+                                        >
+                                            <i className="bi bi-grid-fill"></i> Моя панель
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" to={`/instructor/courses/`}>
+                                            <i className="fas fa-shopping-cart"></i> Мои курсы
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="dropdown-item"
+                                            to={`/instructor/create-course/`}
+                                        >
+                                            <i className="fas fa-plus"></i> Создать курс
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" to={`/instructor/reviews/`}>
+                                            <i className="fas fa-star"></i> Отзывы{" "}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="dropdown-item"
+                                            to={`/instructor/question-answer/`}
+                                        >
+                                            <i className="fas fa-envelope"></i> Q/A{" "}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="dropdown-item"
+                                            to={`/instructor/students/`}
+                                        >
+                                            <i className="fas fa-users"></i> Студенты{" "}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" to={`/instructor/earning/`}>
+                                            <i className="fas fa-dollar-sign"></i> Продажи{" "}
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link className="dropdown-item" to={`/instructor/profile/`}>
+                                            <i className="fas fa-gear"></i> Настрокйки и профиль{" "}
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <a
+                                    className="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <i className="fas fa-graduation-cap"></i> Студент
+                                </a>
+                                <ul className="dropdown-menu">
+                                    <li>
+                                        <Link className="dropdown-item" to={`/student/dashboard/`}>
+                                            {" "}
+                                            <i className="bi bi-grid-fill"></i> Моя панель
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" to={`/student/courses/`}>
+                                            {" "}
+                                            <i className="fas fa-shopping-cart"></i>Мои курсы
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link className="dropdown-item" to={`/student/wishlist/`}>
+                                            {" "}
+                                            <i className="fas fa-heart"></i> Желания{" "}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="dropdown-item"
+                                            to={`/student/question-answer/`}
+                                        >
+                                            {" "}
+                                            <i className="fas fa-envelope"></i> Q/A{" "}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" to={`/student/profile/`}>
+                                            {" "}
+                                            <i className="fas fa-gear"></i> Профиль и настройки
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div className="d-flex" role="search">
+                            <input
+                                className="form-control me-2 w-100"
+                                type="search"
+                                placeholder="Search Courses"
+                                aria-label="Search Courses"
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                            />
+                            <button
+                                onClick={handleSearchSubmit}
+                                className="btn btn-outline-success w-50"
+                                type="submit"
+                            >
+                                Поиск <i className="fas fa-search"></i>
+                            </button>
+                        </div>
+                        {isLoggedIn() === true ? (
+                            <>
+                                <Link to="/logout/" className="btn btn-primary ms-2" type="submit">
+                                    Выход <i className="fas fa-usign-out-alt"></i>
+                                </Link>
+                            </>
+                        ) : (
+                            <>
+                                {/* Login and register button */}
+                                <Link to="/login/" className="btn btn-primary ms-2" type="submit">
+                                    Авторизация <i className="fas fa-sign-in-alt"></i>
+                                </Link>
+                                <Link
+                                    to="/register/"
+                                    className="btn btn-primary ms-2"
+                                    type="submit"
+                                >
+                                    Регистрация <i className="fas fa-user-plus"> </i>
+                                </Link>
+                            </>
+                        )}
+                        <Link className="btn btn-success ms-2" to="/cart/">
+                            {/* Cart ({cartCount})  */}
+                            <i className="fas fa-shopping-cart"> </i>
+                        </Link>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-    </div>
-    <div class="px-3 py-2 border-bottom mb-3">
-      <div class="container d-flex flex-wrap justify-content-center">
-        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-light text-dark me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
-        </div>
-      </div>
-    </div>
-  </header>
+    );
 }
+
+export default BaseHeader;

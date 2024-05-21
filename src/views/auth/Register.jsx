@@ -1,12 +1,16 @@
 import { useState } from "react";
-import { login } from "../../utils/auth";
-import BaseHeader from "../partials/BaseHeader";
-import BaseFooter from "../partials/BaseFooter";
 import { Link, useNavigate } from "react-router-dom";
 
-function Login() {
+import { register } from "../../utils/auth";
+
+import BaseHeader from "../partials/BaseHeader";
+import BaseFooter from "../partials/BaseFooter";
+
+function Register() {
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [password2, setPassword2] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -14,12 +18,14 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    const { error } = await login(email, password);
+
+    const { error } = await register(fullName, email, password, password2);
     if (error) {
-      setIsLoading(false);
       alert(error);
+      setIsLoading(false);
     } else {
       navigate("/");
+      alert("Регистрация прошла успешно");
       setIsLoading(false);
     }
   };
@@ -37,11 +43,11 @@ function Login() {
             <div className="card shadow">
               <div className="card-body p-6">
                 <div className="mb-4">
-                  <h1 className="mb-1 fw-bold">Авторизоваться</h1>
+                  <h1 className="mb-1 fw-bold">Регистрация</h1>
                   <span>
-                    У вас есть аккаунт?
-                    <Link to="/register/" className="ms-1">
-                      Зарегистрироваться
+                    У вас уже есть акканут?
+                    <Link to="/login/" className="ms-1">
+                      Авторизоваться
                     </Link>
                   </span>
                 </div>
@@ -54,7 +60,21 @@ function Login() {
                   {/* Username */}
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
-                      e-mail
+                      Полное имя
+                    </label>
+                    <input
+                      type="text"
+                      id="full_name"
+                      className="form-control"
+                      name="full_name"
+                      placeholder="John Doe"
+                      required=""
+                      onChange={(e) => setFullName(e.target.value)}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">
+                      Эл. почта
                     </label>
                     <input
                       type="email"
@@ -65,10 +85,8 @@ function Login() {
                       required=""
                       onChange={(e) => setEmail(e.target.value)}
                     />
-                    <div className="invalid-feedback">
-                      Введите имя пользователя.
-                    </div>
                   </div>
+
                   {/* Password */}
                   <div className="mb-3">
                     <label htmlFor="password" className="form-label">
@@ -83,27 +101,20 @@ function Login() {
                       required=""
                       onChange={(e) => setPassword(e.target.value)}
                     />
-                    <div className="invalid-feedback">Введите пароль.</div>
                   </div>
-                  {/* Checkbox */}
-                  <div className="d-lg-flex justify-content-between align-items-center mb-4">
-                    <div className="form-check">
-                      <input
-                        type="checkbox"
-                        className="form-check-input"
-                        id="rememberme"
-                        required=""
-                      />
-                      <label className="form-check-label" htmlFor="rememberme">
-                        Запомнить меня
-                      </label>
-                      <div className="invalid-feedback">
-                        Согласиться перед отправкой.
-                      </div>
-                    </div>
-                    <div>
-                      <Link to="/forgot-password/">Забыли пароль?</Link>
-                    </div>
+                  <div className="mb-3">
+                    <label htmlFor="password" className="form-label">
+                      Подтвердите пароль
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      className="form-control"
+                      name="password"
+                      placeholder="**************"
+                      required=""
+                      onChange={(e) => setPassword2(e.target.value)}
+                    />
                   </div>
                   <div>
                     <div className="d-grid">
@@ -113,13 +124,13 @@ function Login() {
                           type="submit"
                           className="btn btn-primary"
                         >
-                          В работе.. <i className="fas fa-spinner fa-spin"></i>
+                          Обработка <i className="fas fa-spinner fa-spin"></i>
                         </button>
                       )}
 
                       {isLoading === false && (
                         <button type="submit" className="btn btn-primary">
-                          Авторизация <i className="fas fa-sign-in-alt"></i>
+                          Регистрация <i className="fas fa-user-plus"></i>
                         </button>
                       )}
                     </div>
@@ -136,4 +147,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

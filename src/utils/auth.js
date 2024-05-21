@@ -85,7 +85,6 @@ export const setUser = async () => {
   const access_token = Cookies.get("access_token");
   const refresh_token = Cookies.get("refresh_token");
   if (!access_token || !refresh_token) {
-    alert("Токенов нет в Куках!");
     return;
   }
 
@@ -95,4 +94,10 @@ export const setUser = async () => {
   } else {
     setAuthUser(access_token, refresh_token);
   }
+};
+
+export const logout = () => {
+  Cookies.remove("access_token");
+  Cookies.remove("refresh_token");
+  useAuthStore.getState().setUser(null);
 };
