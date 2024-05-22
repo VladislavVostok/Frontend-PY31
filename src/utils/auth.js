@@ -33,7 +33,6 @@ export const login = async (email, password) => {
 
     if (status === 200) {
       setAuthUser(data.access, data.refresh);
-      //alert("Доступ разрешён");
     }
     return { data, error: null };
   } catch (error) {
@@ -53,7 +52,6 @@ export  const register = async (full_name, email, password, password2) => {
       password2,
     });
     await login(email, password);
-    alert("Регистрация прошла успешно, вы залогинились!");
     return { data, error: null };
   } catch (error) {
     return {

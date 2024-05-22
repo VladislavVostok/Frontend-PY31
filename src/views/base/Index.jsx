@@ -1,20 +1,21 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
 import useAxios from "../../utils/useAxios";
 
-import apiInstance from "../../utils/axios";
 
 
 function Index() {
     const [courses, setCourses] = useState([]);
+    // eslint-disable-next-line no-unused-vars
     const [isLoading, setIsLoading] = useState(true);
 
     const fetchCourse = async () => {
         setIsLoading(true);
         try {
+          // eslint-disable-next-line react-hooks/rules-of-hooks
           await useAxios()
-            .get("/course/course-list/")
+            .get("course/course-list/")
             .then((res) => {
               setCourses(res.data);
               setIsLoading(false);
