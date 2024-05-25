@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { CartContext } from "../plugin/Context";
 import { useAuthStore } from "../../store/auth";
 
 function BaseHeader() {
+    const [cartCount] = useContext(CartContext);
     const [searchQuery, setSearchQuery] = useState("");
     const navigate = useNavigate();
 
@@ -18,7 +20,7 @@ function BaseHeader() {
             <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        Python31
+                        PYTHON-31
                     </Link>
                     <button
                         className="navbar-toggler"
@@ -105,7 +107,7 @@ function BaseHeader() {
 
                                     <li>
                                         <Link className="dropdown-item" to={`/instructor/profile/`}>
-                                            <i className="fas fa-gear"></i> Настрокйки и профиль{" "}
+                                            <i className="fas fa-gear"></i>  Настрокйки и профиль{" "}
                                         </Link>
                                     </li>
                                 </ul>
@@ -196,8 +198,7 @@ function BaseHeader() {
                             </>
                         )}
                         <Link className="btn btn-success ms-2" to="/cart/">
-                            {/* Cart ({cartCount})  */}
-                            <i className="fas fa-shopping-cart"> </i>
+                            Корзина ({cartCount}) <i className="fas fa-shopping-cart"> </i>
                         </Link>
                     </div>
                 </div>

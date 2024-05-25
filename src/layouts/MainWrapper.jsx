@@ -8,7 +8,9 @@ const MainWrapper = ({ children }) => {
   useEffect(() => {
     const handler = async () => {
       setLoading(true);
+
       await setUser();
+
       setLoading(false);
     };
 

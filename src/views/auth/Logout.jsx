@@ -22,9 +22,9 @@ function Logout() {
             <div className="card shadow">
               <div className="card-body p-6">
                 <div className="mb-4">
-                  <h1 className="mb-1 fw-bold">Вы вышли из системы</h1>
+                  <h1 className="mb-1 fw-bold">Вы вышли из своей учетной записи</h1>
                   <span>
-                    Спасибо, что посетили наш сайт, возвращайтесь в любое время!
+                    Спасибо за посещение нашего сайта. Вы можете вернуться в любой момент!
                   </span>
                 </div>
                 <form className="needs-validation mt-5" noValidate="">
@@ -32,7 +32,7 @@ function Logout() {
                     <Link to={`/login/`} className="btn btn-primary me-2 w-100">
                       Авторизация <i className="fas fa-sign-in-alt"></i>
                     </Link>
-                    <Link to={`/login/`} className="btn btn-primary w-100">
+                    <Link to={`/register/`} className="btn btn-primary w-100">
                       Регистрация <i className="fas fa-user-plus"></i>
                     </Link>
                   </div>

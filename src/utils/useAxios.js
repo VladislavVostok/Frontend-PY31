@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getRefreshToken, isAccessTokenExpired, setAuthUser } from "./auth";
+import { getRefreshedToken, isAccessTokenExpired, setAuthUser } from "./auth";
 import { API_BASE_URL } from "./constants";
 import Cookies from "js-cookie";
 
@@ -9,7 +9,7 @@ const useAxios = () => {
 
   const axiosInstance = axios.create({
     baseURL: API_BASE_URL,
-    headers: {  Authorization: `Bearer ${accessToken}`, },
+    headers: { Authorization: `Bearer ${accessToken}` },
   });
 
   axiosInstance.interceptors.request.use(async (req) => {
@@ -17,11 +17,12 @@ const useAxios = () => {
       return req;
     }
 
-    const response = await getRefreshToken(refreshToken);
+    const response = await getRefreshedToken(refreshToken);
     setAuthUser(response.access, response.refresh);
     req.headers.Authorization = `Bearer ${response.data?.access}`;
     return req;
   });
+
   return axiosInstance;
 };
 

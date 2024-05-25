@@ -1,34 +1,57 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-
-import { register } from "../../utils/auth";
-
+import { useState, useEffect } from "react";
 import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
-
-function Register() {
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
+import apiInstance from "../../utils/axios";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import Toast from "../plugin/Toast";
+function CreateNewPassword() {
   const [password, setPassword] = useState("");
-  const [password2, setPassword2] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
+  const [searchParam] = useSearchParams();
 
-  const handleSubmit = async (e) => {
+  const otp = searchParam.get("otp");
+  const uuidb64 = searchParam.get("uuidb64");
+  const refresh_token = searchParam.get("refresh_token");
+
+  const handleCreatePassword = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-
-    const { error } = await register(fullName, email, password, password2);
-    if (error) {
-      alert(error);
-      setIsLoading(false);
+    if (confirmPassword !== password) {
+      Toast().fire({
+        icon: "warning",
+        title: "Passwords does not match",
+      });
+      return;
     } else {
-      navigate("/");
-      setIsLoading(false);
-    }
-  };
+      const formdata = new FormData();
+      formdata.append("password", password);
+      formdata.append("otp", otp);
+      formdata.append("uuidb64", uuidb64);
+      formdata.append("refresh_token", refresh_token);
 
+      try {
+        await apiInstance
+          .post(`user/password-change/`, formdata)
+          .then((res) => {
+            console.log(res.data);
+            setIsLoading(false);
+            navigate("/login/");
+            Toast().fire({
+              icon: "warning",
+              title: res.data.message,
+            });
+          });
+      } catch (error) {
+        console.log(error);
+        setIsLoading(false);
+      }
+    }
+
+    console.log("Password Created");
+  };
   return (
     <>
       <BaseHeader />
@@ -42,54 +65,17 @@ function Register() {
             <div className="card shadow">
               <div className="card-body p-6">
                 <div className="mb-4">
-                  <h1 className="mb-1 fw-bold">Регистрация</h1>
-                  <span>
-                    Уже имеете аккаунт?
-                    <Link to="/login/" className="ms-1">
-                      Автризация
-                    </Link>
-                  </span>
+                  <h1 className="mb-1 fw-bold">Create New Password</h1>
+                  <span>Choose a new password for your account</span>
                 </div>
-                {/* Form */}
                 <form
                   className="needs-validation"
                   noValidate=""
-                  onSubmit={handleSubmit}
+                  onSubmit={handleCreatePassword}
                 >
-                  {/* Username */}
-                  <div className="mb-3">
-                    <label htmlFor="email" className="form-label">
-                      ФИО
-                    </label>
-                    <input
-                      type="text"
-                      id="full_name"
-                      className="form-control"
-                      name="full_name"
-                      placeholder="John Doe"
-                      required=""
-                      onChange={(e) => setFullName(e.target.value)}
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="email" className="form-label">
-                      Эл. почта
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="form-control"
-                      name="email"
-                      placeholder="johndoe@gmail.com"
-                      required=""
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
-
-                  {/* Password */}
                   <div className="mb-3">
                     <label htmlFor="password" className="form-label">
-                      Пароль
+                      Enter New Password
                     </label>
                     <input
                       type="password"
@@ -100,10 +86,14 @@ function Register() {
                       required=""
                       onChange={(e) => setPassword(e.target.value)}
                     />
+                    <div className="invalid-feedback">
+                      Please enter valid password.
+                    </div>
                   </div>
+
                   <div className="mb-3">
                     <label htmlFor="password" className="form-label">
-                      Подтвердите пароль
+                      Confirm New Password
                     </label>
                     <input
                       type="password"
@@ -112,9 +102,13 @@ function Register() {
                       name="password"
                       placeholder="**************"
                       required=""
-                      onChange={(e) => setPassword2(e.target.value)}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
                     />
+                    <div className="invalid-feedback">
+                      Please enter valid password.
+                    </div>
                   </div>
+
                   <div>
                     <div className="d-grid">
                       {isLoading === true && (
@@ -123,13 +117,14 @@ function Register() {
                           type="submit"
                           className="btn btn-primary"
                         >
-                          В работе <i className="fas fa-spinner fa-spin"></i>
+                          Processing <i className="fas fa-spinner fa-spin"></i>
                         </button>
                       )}
 
                       {isLoading === false && (
                         <button type="submit" className="btn btn-primary">
-                          Регистрация <i className="fas fa-user-plus"></i>
+                          Save New Password{" "}
+                          <i className="fas fa-check-circle"></i>
                         </button>
                       )}
                     </div>
@@ -146,4 +141,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default CreateNewPassword;

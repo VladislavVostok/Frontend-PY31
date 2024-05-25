@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { login } from "../../utils/auth";
 import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
@@ -37,11 +38,11 @@ function Login() {
             <div className="card shadow">
               <div className="card-body p-6">
                 <div className="mb-4">
-                  <h1 className="mb-1 fw-bold">Авторизоваться</h1>
+                  <h1 className="mb-1 fw-bold">Авторизация</h1>
                   <span>
-                    У вас есть аккаунт?
+                    Ещё не имеете аккаунт?
                     <Link to="/register/" className="ms-1">
-                      Зарегистрироваться
+                      Регистрация
                     </Link>
                   </span>
                 </div>
@@ -54,7 +55,7 @@ function Login() {
                   {/* Username */}
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
-                      e-mail
+                      Эл. почта
                     </label>
                     <input
                       type="email"
@@ -66,7 +67,7 @@ function Login() {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                     <div className="invalid-feedback">
-                      Введите имя пользователя.
+                      Пожалуйста введите правильное имя пользователя.
                     </div>
                   </div>
                   {/* Password */}
@@ -83,7 +84,9 @@ function Login() {
                       required=""
                       onChange={(e) => setPassword(e.target.value)}
                     />
-                    <div className="invalid-feedback">Введите пароль.</div>
+                    <div className="invalid-feedback">
+                     Пожалуйста введите правильный пароль.
+                    </div>
                   </div>
                   {/* Checkbox */}
                   <div className="d-lg-flex justify-content-between align-items-center mb-4">
@@ -98,7 +101,7 @@ function Login() {
                         Запомнить меня
                       </label>
                       <div className="invalid-feedback">
-                        Согласиться перед отправкой.
+                        Вы должны подтвердить отправку данных.
                       </div>
                     </div>
                     <div>
@@ -113,13 +116,13 @@ function Login() {
                           type="submit"
                           className="btn btn-primary"
                         >
-                          В работе.. <i className="fas fa-spinner fa-spin"></i>
+                          В работе <i className="fas fa-spinner fa-spin"></i>
                         </button>
                       )}
 
                       {isLoading === false && (
                         <button type="submit" className="btn btn-primary">
-                          Авторизация <i className="fas fa-sign-in-alt"></i>
+                          Авторизоваться <i className="fas fa-sign-in-alt"></i>
                         </button>
                       )}
                     </div>

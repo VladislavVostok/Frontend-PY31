@@ -1,6 +1,7 @@
-import { useState} from "react";
+import { useState, useEffect } from "react";
 import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
+import { Link } from "react-router-dom";
 import apiInstance from "../../utils/axios";
 function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -34,8 +35,8 @@ function ForgotPassword() {
             <div className="card shadow">
               <div className="card-body p-6">
                 <div className="mb-4">
-                  <h1 className="mb-1 fw-bold">Забыли пароль</h1>
-                  <span>Мы поможем вам вернуться в аккаунт</span>
+                  <h1 className="mb-1 fw-bold">Forgot Password</h1>
+                  <span>Let's help you get back into your account</span>
                 </div>
                 <form
                   className="needs-validation"
@@ -44,7 +45,7 @@ function ForgotPassword() {
                 >
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
-                      Эл. почта
+                      Email Address
                     </label>
                     <input
                       type="email"
@@ -61,13 +62,13 @@ function ForgotPassword() {
                     <div className="d-grid">
                       {isLoading === true && (
                         <button disabled type="submit" className="btn btn-primary">
-                          В обработке <i className="fas fa-spinner fa-spin"></i>
+                          Processing <i className="fas fa-spinner fa-spin"></i>
                         </button>
                       )}
 
                       {isLoading === false && (
                         <button type="submit" className="btn btn-primary">
-                          Скинут пароль <i className="fas fa-arrow-right"></i>
+                          Reset Password <i className="fas fa-arrow-right"></i>
                         </button>
                       )}
                     </div>
