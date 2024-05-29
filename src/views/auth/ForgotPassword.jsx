@@ -35,8 +35,8 @@ function ForgotPassword() {
             <div className="card shadow">
               <div className="card-body p-6">
                 <div className="mb-4">
-                  <h1 className="mb-1 fw-bold">Forgot Password</h1>
-                  <span>Let's help you get back into your account</span>
+                  <h1 className="mb-1 fw-bold">Забыли пароль</h1>
+                  <span>Мы поможем вам вернуться в аккаунт</span>
                 </div>
                 <form
                   className="needs-validation"
@@ -45,14 +45,14 @@ function ForgotPassword() {
                 >
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
-                      Email Address
+                      Эл. почта
                     </label>
                     <input
                       type="email"
                       id="email"
                       className="form-control"
                       name="email"
-                      placeholder="johndoe@gmail.com"
+                      placeholder="example@host.ru"
                       required
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -62,13 +62,13 @@ function ForgotPassword() {
                     <div className="d-grid">
                       {isLoading === true && (
                         <button disabled type="submit" className="btn btn-primary">
-                          Processing <i className="fas fa-spinner fa-spin"></i>
+                          В работе <i className="fas fa-spinner fa-spin"></i>
                         </button>
                       )}
 
                       {isLoading === false && (
                         <button type="submit" className="btn btn-primary">
-                          Reset Password <i className="fas fa-arrow-right"></i>
+                          Сбросить пароль <i className="fas fa-arrow-right"></i>
                         </button>
                       )}
                     </div>

@@ -65,8 +65,8 @@ function CreateNewPassword() {
             <div className="card shadow">
               <div className="card-body p-6">
                 <div className="mb-4">
-                  <h1 className="mb-1 fw-bold">Create New Password</h1>
-                  <span>Choose a new password for your account</span>
+                  <h1 className="mb-1 fw-bold">Создайте новый пароль</h1>
+                  <span>Создайте новый пароль для своей учетной записи</span>
                 </div>
                 <form
                   className="needs-validation"
@@ -75,7 +75,7 @@ function CreateNewPassword() {
                 >
                   <div className="mb-3">
                     <label htmlFor="password" className="form-label">
-                      Enter New Password
+                      Введите новый пароль
                     </label>
                     <input
                       type="password"
@@ -87,13 +87,13 @@ function CreateNewPassword() {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                     <div className="invalid-feedback">
-                      Please enter valid password.
+                      Пожалуйста введите пароль.
                     </div>
                   </div>
 
                   <div className="mb-3">
                     <label htmlFor="password" className="form-label">
-                      Confirm New Password
+                      Подтвердите новый пароль
                     </label>
                     <input
                       type="password"
@@ -105,7 +105,7 @@ function CreateNewPassword() {
                       onChange={(e) => setConfirmPassword(e.target.value)}
                     />
                     <div className="invalid-feedback">
-                      Please enter valid password.
+                      Пожалуйста введите пароль.
                     </div>
                   </div>
 
@@ -117,13 +117,13 @@ function CreateNewPassword() {
                           type="submit"
                           className="btn btn-primary"
                         >
-                          Processing <i className="fas fa-spinner fa-spin"></i>
+                          В работе <i className="fas fa-spinner fa-spin"></i>
                         </button>
                       )}
 
                       {isLoading === false && (
                         <button type="submit" className="btn btn-primary">
-                          Save New Password{" "}
+                          Сохранить пароль{" "}
                           <i className="fas fa-check-circle"></i>
                         </button>
                       )}

@@ -40,7 +40,7 @@ function Login() {
                 <div className="mb-4">
                   <h1 className="mb-1 fw-bold">Авторизация</h1>
                   <span>
-                    Ещё не имеете аккаунт?
+                    Ещё не имеете аккаунта?
                     <Link to="/register/" className="ms-1">
                       Регистрация
                     </Link>
@@ -62,7 +62,7 @@ function Login() {
                       id="email"
                       className="form-control"
                       name="email"
-                      placeholder="johndoe@gmail.com"
+                      placeholder="example@host.ru"
                       required=""
                       onChange={(e) => setEmail(e.target.value)}
                     />

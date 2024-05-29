@@ -46,7 +46,7 @@ function Register() {
                   <span>
                     Уже имеете аккаунт?
                     <Link to="/login/" className="ms-1">
-                      Автризация
+                      Авторизация
                     </Link>
                   </span>
                 </div>
@@ -66,7 +66,7 @@ function Register() {
                       id="full_name"
                       className="form-control"
                       name="full_name"
-                      placeholder="John Doe"
+                      placeholder="Фамилия Имя Отчество"
                       required=""
                       onChange={(e) => setFullName(e.target.value)}
                     />
@@ -80,7 +80,7 @@ function Register() {
                       id="email"
                       className="form-control"
                       name="email"
-                      placeholder="johndoe@gmail.com"
+                      placeholder="example@host.ru"
                       required=""
                       onChange={(e) => setEmail(e.target.value)}
                     />
