@@ -117,7 +117,7 @@ function Index() {
                 </h5>
                 {/* heading */}
                 <h1 className="display-3 fw-bold mb-3">
-                  Развивайте свои навыки и продвигайтесь по карьерной лестнице
+                  Развивайте свои навыки и карьерьеру
                 </h1>
                 {/* para */}
                 <p className="pe-lg-10 mb-5">
@@ -127,13 +127,13 @@ function Index() {
                 </p>
                 {/* btn */}
                 <a href="#" className="btn btn-primary fs-4 text-inherit ms-3">
-                  Присоединяйтесь бесплатно прямо сейчас <i className="fas fa-plus"></i>
+                  Присоединяйтесь бесплатно<i className="fas fa-plus"></i>
                 </a>
                 <a
                   href="#"
                   className="btn btn-outline-success fs-4 text-inherit ms-3"
                 >
-                  Посмотреть демо <i className="fas fa-video"></i>
+                  Демо <i className="fas fa-video"></i>
                 </a>
               </div>
             </div>
@@ -176,8 +176,8 @@ function Index() {
                 </div>
                 {/* text */}
                 <div className="lh-1">
-                  <h2 className="mb-1">1,8 миллиарда+</h2>
-                  <span>Запись на курсы</span>
+                  <h2 className="mb-1">1,8 млрд.+</h2>
+                  <span>Записей на курсы</span>
                 </div>
               </div>
             </div>
@@ -477,7 +477,7 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/1.png"
+                              src="https://geeksui.codescandy.com/geeks/assets/images/png/cta-instructor-1.png"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
@@ -568,7 +568,7 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/2.png"
+                              src="https://geeksui.codescandy.com/geeks/assets/images/png/cta-instructor-1.png"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
@@ -644,7 +644,7 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/3.png"
+                              src="https://geeksui.codescandy.com/geeks/assets/images/png/cta-instructor-1.png"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
