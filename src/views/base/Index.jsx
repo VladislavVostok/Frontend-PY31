@@ -438,7 +438,7 @@ function Index() {
                         </span>
                         <span className="text-dark fw-semibold">4.5/5.0</span>
                       </span>
-                      <span className="ms-2">(Based on 3265 ratings)</span>
+                      <span className="ms-2">(Основано на 3265 оценках)</span>
                     </div>
                     {/* heading */}
                     <h2 className="h1">Что говорят наши студенты</h2>
