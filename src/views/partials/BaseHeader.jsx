@@ -20,7 +20,7 @@ function BaseHeader() {
             <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        PYTHON-31(1)
+                        PYTHON-31
                     </Link>
                     <button
                         className="navbar-toggler"
