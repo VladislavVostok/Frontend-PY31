@@ -113,27 +113,27 @@ function Index() {
                 {/* heading */}
                 <h5 className="text-dark mb-4">
                   <i className="fe fe-check icon-xxs icon-shape bg-light-success text-success rounded-circle me-2" />
-                  Most trusted education platform
+                  Самая надежная образовательная платформа
                 </h5>
                 {/* heading */}
                 <h1 className="display-3 fw-bold mb-3">
-                  Grow your skills and advance career
+                  Развивайте свои навыки и продвигайтесь по карьерной лестнице
                 </h1>
                 {/* para */}
                 <p className="pe-lg-10 mb-5">
-                  Start, switch, or advance your career with more than 5,000
-                  courses, Professional Certificates, and degrees from
-                  world-class universities and companies.
+                  Начните, смените или продвиньте свою карьеру с более чем 5000
+                  курсы, профессиональные сертификаты и степени от
+                  университеты и компании мирового уровня.
                 </p>
                 {/* btn */}
                 <a href="#" className="btn btn-primary fs-4 text-inherit ms-3">
-                  Join Free Now <i className="fas fa-plus"></i>
+                  Присоединяйтесь бесплатно прямо сейчас <i className="fas fa-plus"></i>
                 </a>
                 <a
                   href="#"
                   className="btn btn-outline-success fs-4 text-inherit ms-3"
                 >
-                  Watch Demo <i className="fas fa-video"></i>
+                  Посмотреть демо <i className="fas fa-video"></i>
                 </a>
               </div>
             </div>
@@ -164,7 +164,7 @@ function Index() {
                 </div>
                 <div className="lh-1">
                   <h2 className="mb-1">316,000+</h2>
-                  <span>Qualified Instructor</span>
+                  <span>Квалифицированный инструктор</span>
                 </div>
               </div>
             </div>
@@ -176,8 +176,8 @@ function Index() {
                 </div>
                 {/* text */}
                 <div className="lh-1">
-                  <h2 className="mb-1">1.8 Billion+</h2>
-                  <span>Course enrolments</span>
+                  <h2 className="mb-1">1,8 миллиарда+</h2>
+                  <span>Запись на курсы</span>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@ function Index() {
                 {/* text */}
                 <div className="lh-1">
                   <h2 className="mb-1">41,000+</h2>
-                  <span>Courses in 42 languages</span>
+                  <span>Курсы на 42 языках</span>
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@ function Index() {
                 {/* text */}
                 <div className="lh-1">
                   <h2 className="mb-1">179,000+</h2>
-                  <span>Online Videos</span>
+                  <span>Видео курсов</span>
                 </div>
               </div>
             </div>
@@ -217,10 +217,10 @@ function Index() {
             {/* col */}
             <div className="col-12">
               <div className="mb-6">
-                <h2 className="mb-1 h1">🔥Most Popular Courses</h2>
+                <h2 className="mb-1 h1">🔥Самые популярные курсы</h2>
                 <p>
-                  These are the most popular courses among Geeks Courses
-                  learners worldwide in year 2022
+                  Это самые популярные курсы среди Geeks Courses.
+                  учащихся во всем мире в 2022 году
                 </p>
               </div>
             </div>
@@ -265,9 +265,9 @@ function Index() {
                             {c.title}
                           </Link>
                         </h4>
-                        <small>By: {c.teacher.full_name}</small> <br />
+                        <small>{c.teacher.full_name}</small> <br />
                         <small>
-                          {c.students?.length} Student
+                          {c.students?.length} Студент
                           {c.students?.length > 1 && "s"}
                         </small>{" "}
                         <br />
@@ -279,7 +279,7 @@ function Index() {
                           </span>
                           <span className="text-warning">4.5</span>
                           <span className="fs-6 ms-2">
-                            ({c.reviews?.length} Reviews)
+                            ({c.reviews?.length} Отзывы)
                           </span>
                         </div>
                       </div>
@@ -309,7 +309,7 @@ function Index() {
                               to={""}
                               className="text-inherit text-decoration-none btn btn-primary"
                             >
-                              Enroll Now{" "}
+                              Зарегистрируйтесь сейчас{" "}
                               <i className="fas fa-arrow-right text-primary align-middle me-2 text-white" />
                             </Link>
                           </div>
@@ -329,7 +329,7 @@ function Index() {
                       onClick={() => setCurrentPage(currentPage - 1)}
                     >
                       <i className="ci-arrow-left me-2" />
-                      Previous
+                      Предыдущий
                     </button>
                   </li>
                 </ul>
@@ -357,7 +357,7 @@ function Index() {
                       className="page-link ms-1"
                       onClick={() => setCurrentPage(currentPage + 1)}
                     >
-                      Next
+                      Следующий
                       <i className="ci-arrow-right ms-3" />
                     </button>
                   </li>
@@ -402,14 +402,14 @@ function Index() {
             <div className="col-lg-5 col-12">
               <div className="text-white p-5 p-lg-0">
                 {/* text */}
-                <h2 className="h1 text-white">Become an instructor today</h2>
+                <h2 className="h1 text-white">Станьте инструктором сегодня</h2>
                 <p className="mb-0">
-                  Instructors from around the world teach millions of students
-                  on Geeks. We provide the tools and skills to teach what you
-                  love.
+                  Преподаватели со всего мира обучают миллионы студентов
+                  на Гиках. Мы предоставляем инструменты и навыки, чтобы научить тому, чему вы
+                  любовь.
                 </p>
                 <a href="#" className="btn bg-white text-dark fw-bold mt-4">
-                  Start Teaching Today <i className="fas fa-arrow-right"></i>
+                  Начните преподавать сегодня <i className="fas fa-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -441,21 +441,21 @@ function Index() {
                       <span className="ms-2">(Based on 3265 ratings)</span>
                     </div>
                     {/* heading */}
-                    <h2 className="h1">What our students say</h2>
+                    <h2 className="h1">Что говорят наши студенты</h2>
                     <p className="mb-0">
-                      Hear from
-                      <span className="text-dark">teachers</span>,
-                      <span className="text-dark">trainers</span>, and
-                      <span className="text-dark">leaders</span>
-                      in the learning space about how Geeks empowers them to
-                      provide quality online learning experiences.
+                      Послушайте
+                      <span className="text-dark">учителей</span>,
+                      <span className="text-dark">тренеров</span> и
+                      <span className="text-dark">лидеров</span>
+                        образовательной сферы о том, как гики помогают им
+                        обеспечить качественный опыт онлайн-обучения.
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-4 text-md-end mt-4 mt-md-0">
                   {/* btn */}
                   <a href="#" className="btn btn-primary">
-                    View Reviews
+                    Посмотреть обзоры
                   </a>
                 </div>
               </div>
@@ -477,15 +477,27 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/avatar-1.jpg"
+                              src="../../assets/images/avatar/1.png"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
                             <p className="mb-0 mt-3">
-                              “The generated lorem Ipsum is therefore always
-                              free from repetition, injected humour, or words
-                              etc generate lorem Ipsum which looks racteristic
-                              reasonable.”
+                              “Проходила курс от PYTHON-31 по профессии Финансовый менеджер, 
+                              дополнительно мне дали курс в подарок Таргетолог с нуля, курс очень классный, 
+                              все прошла на легке, перед тем, как выбрать читала много положительных отзывов о 
+                              курсе, темы максимально глубокие, что очень важно.
+                              По таргету хорошо составленная программа, преподаватели PYTHON-31 — профессионалы 
+                              своего дела, занятия всегда на доступном языке, много полезной информации, 
+                              кураторы проверят быстро домашние задания, поясняют ошибки. Здорово что можно 
+                              изменить свою профессию за несколько месяцев. И самое важное это то, что можно 
+                              учиться в любое время и с любой точки мира. Для тех, кто ведет собственный бизнес — 
+                              много полезной информации. Качество обучения на высшем уровне.
+                              По Финансовому менеджеру пройдя обучение за год, подумала, что не мое, 
+                              много инфы, которая не для меня, пришлось написать в техподдержку, в итоге 
+                              мне заменили курс на более мне подходящий, без проблем. Честно, уверена была, 
+                              что никто не станет возиться с заменой курса, спасибо, что все так 
+                              замечательного организовано.
+                              Школа супер, все рекомендую, лояльные менеджеры!”
                             </p>
                             {/* rating */}
                             <div className="lh-1 mb-3 mt-4">
@@ -544,8 +556,8 @@ function Index() {
                               <span className="text-warning">5</span>
                               {/* text */}
                             </div>
-                            <h3 className="mb-0 h4">Gladys Colbert</h3>
-                            <span>Software Engineer at Palantir</span>
+                            <h3 className="mb-0 h4">Игнат Стрельников</h3>
+                            <span>Финансист в Yandex</span>
                           </div>
                         </div>
                       </div>
@@ -556,15 +568,12 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/avatar-1.jpg"
+                              src="../../assets/images/avatar/2.png"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
                             <p className="mb-0 mt-3">
-                              “The generated lorem Ipsum is therefore always
-                              free from repetition, injected humour, or words
-                              etc generate lorem Ipsum which looks racteristic
-                              reasonable.”
+                              “Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dicta eum iure quasi exercitationem ipsa porro natus quo soluta recusandae? Aliquam, libero. Rerum expedita voluptas, odit repellat debitis obcaecati soluta.”
                             </p>
                             {/* rating */}
                             <div className="lh-1 mb-3 mt-4">
@@ -623,8 +632,8 @@ function Index() {
                               <span className="text-warning">5</span>
                               {/* text */}
                             </div>
-                            <h3 className="mb-0 h4">Gladys Colbert</h3>
-                            <span>Software Engineer at Palantir</span>
+                            <h3 className="mb-0 h4">Николай Полежаев</h3>
+                            <span>Инжинер-программист Mail Group</span>
                           </div>
                         </div>
                       </div>
@@ -635,15 +644,12 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/avatar-1.jpg"
+                              src="../../assets/images/avatar/3.png"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
                             <p className="mb-0 mt-3">
-                              “The generated lorem Ipsum is therefore always
-                              free from repetition, injected humour, or words
-                              etc generate lorem Ipsum which looks racteristic
-                              reasonable.”
+                            “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus earum, fugit illum dolores aperiam odio voluptates porro perferendis ex eum. Inventore culpa earum harum fugit quas. Nobis dolore et quasi.”
                             </p>
                             {/* rating */}
                             <div className="lh-1 mb-3 mt-4">
@@ -702,8 +708,8 @@ function Index() {
                               <span className="text-warning">5</span>
                               {/* text */}
                             </div>
-                            <h3 className="mb-0 h4">Gladys Colbert</h3>
-                            <span>Software Engineer at Palantir</span>
+                            <h3 className="mb-0 h4">Глеб Галушкин</h3>
+                            <span>Системный-инженер в Binance</span>
                           </div>
                         </div>
                       </div>
