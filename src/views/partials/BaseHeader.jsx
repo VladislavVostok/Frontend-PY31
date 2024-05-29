@@ -38,7 +38,7 @@ function BaseHeader() {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/pages/contact-us/">
                                     {" "}
-                                    <i className="fas fa-phone"></i> Связаться с нами
+                                    <i className="fas fa-phone"></i> Связь
                                 </Link>
                             </li>
                             <li className="nav-item">
