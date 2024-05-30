@@ -92,26 +92,26 @@ function Cart() {
           <div className="row">
             <div className="col-12">
               <div className="bg-light p-4 text-center rounded-3">
-                <h1 className="m-0">My cart</h1>
+                <h1 className="m-0">Моя корзина</h1>
                 {/* Breadcrumb */}
                 <div className="d-flex justify-content-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb breadcrumb-dots mb-0">
                       <li className="breadcrumb-item">
                         <a href="#" className="text-decoration-none text-dark">
-                          Home
+                          Главная
                         </a>
                       </li>
                       <li className="breadcrumb-item">
                         <a href="#" className="text-decoration-none text-dark">
-                          Courses
+                          Курсы
                         </a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Cart
+                        Коззина
                       </li>
                     </ol>
                   </nav>
@@ -176,7 +176,7 @@ function Cart() {
                         ))}
 
                         {cart?.length < 1 && (
-                          <p className="mt-1 p-1">No Item In Cart</p>
+                          <p className="mt-1 p-1">Нет товара в Корзине</p>
                         )}
                       </tbody>
                     </table>
@@ -186,13 +186,13 @@ function Cart() {
                 {/* Personal info START */}
                 <div className="shadow p-4 rounded-3 mt-5">
                   {/* Title */}
-                  <h5 className="mb-0">Personal Details</h5>
+                  <h5 className="mb-0">Личные данные</h5>
                   {/* Form START */}
                   <div className="row g-3 mt-0">
                     {/* Name */}
                     <div className="col-md-12 bg-light-input">
                       <label htmlFor="yourName" className="form-label">
-                        Your name *
+                      Ваше имя *
                       </label>
                       <input
                         type="text"
@@ -207,7 +207,7 @@ function Cart() {
                     {/* Email */}
                     <div className="col-md-12 bg-light-input">
                       <label htmlFor="emailInput" className="form-label">
-                        Email address *
+                        Эл. почта *
                       </label>
                       <input
                         type="email"
@@ -223,7 +223,7 @@ function Cart() {
                     {/* Country option */}
                     <div className="col-md-12 bg-light-input">
                       <label htmlFor="mobileNumber" className="form-label">
-                        Enter country *
+                      Страна *
                       </label>
                       <input
                         type="text"
@@ -245,15 +245,15 @@ function Cart() {
                   <h4 className="mb-3">Cart Total</h4>
                   <ul class="list-group mb-3">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Sub Total
+                    Подытог
                       <span>${cartStats.price?.toFixed(2)}</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Tax
+                    Налог
                       <span>${cartStats.tax?.toFixed(2)}</span>
                     </li>
                     <li class="list-group-item d-flex fw-bold justify-content-between align-items-center">
-                      Total
+                    Итог
                       <span className="fw-bold">
                         ${cartStats.total?.toFixed(2)}
                       </span>
@@ -261,14 +261,14 @@ function Cart() {
                   </ul>
                   <div className="d-grid">
                     <button type="submit" className="btn btn-lg btn-success">
-                      Proceed to Checkout
+                    Переходите к оформлению заказа
                     </button>
                   </div>
                   <p className="small mb-0 mt-2 text-center">
-                    By proceeding to checkout, you agree to these{" "}
+                  Приступая к оформлению заказа, вы соглашаетесь с этими{" "}
                     <a href="#">
                       {" "}
-                      <strong>Terms of Service</strong>
+                      <strong>условиями обслуживания</strong>
                     </a>
                   </p>
                 </div>

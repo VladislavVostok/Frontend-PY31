@@ -77,31 +77,31 @@ function Checkout() {
           <div className="row">
             <div className="col-12">
               <div className="bg-light p-4 text-center rounded-3">
-                <h1 className="m-0">Checkout</h1>
+                <h1 className="m-0">Проверка</h1>
                 {/* Breadcrumb */}
                 <div className="d-flex justify-content-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb breadcrumb-dots mb-0">
                       <li className="breadcrumb-item">
                         <a href="#" className="text-decoration-none text-dark">
-                          Home
+                          Главная
                         </a>
                       </li>
                       <li className="breadcrumb-item">
                         <a href="#" className="text-decoration-none text-dark">
-                          Courses
+                          Курсы
                         </a>
                       </li>
                       <li className="breadcrumb-item">
                         <a href="#" className="text-decoration-none text-dark">
-                          Cart
+                          Корзина
                         </a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Checkout
+                        Проверка
                       </li>
                     </ol>
                   </nav>
@@ -121,7 +121,7 @@ function Checkout() {
               >
                 <div>
                   <i className="bi bi-exclamation-octagon-fill me-2" />
-                  Review your courses before payment
+                  Ознакомьтесь с вашими курсами перед оплатой
                 </div>
 
                 <button
@@ -175,7 +175,7 @@ function Checkout() {
                   </table>
                 </div>
                 <Link to={`/cart/`} className="btn btn-outline-secondary mt-3">
-                  Edit Cart <i className="fas fa-edit"></i>
+                Редактировать корзину <i className="fas fa-edit"></i>
                 </Link>
               </div>
 
@@ -184,7 +184,7 @@ function Checkout() {
                 <form className="row g-3 mt-0">
                   <div className="col-md-12 bg-light-input">
                     <label htmlFor="yourName" className="form-label">
-                      Your name *
+                    Ваше имя *
                     </label>
                     <input
                       type="text"
@@ -197,7 +197,7 @@ function Checkout() {
                   </div>
                   <div className="col-md-12 bg-light-input">
                     <label htmlFor="emailInput" className="form-label">
-                      Email address *
+                      Эл. почта *
                     </label>
                     <input
                       type="email"
@@ -212,7 +212,7 @@ function Checkout() {
                   {/* Country option */}
                   <div className="col-md-12 bg-light-input">
                     <label htmlFor="mobileNumber" className="form-label">
-                      Select country *
+                    Выберите страну *
                     </label>
                     <input
                       type="text"
@@ -231,10 +231,10 @@ function Checkout() {
               <div className="row mb-0">
                 <div className="col-md-6 col-xl-12">
                   <div className="shadow p-4 mb-4 rounded-3">
-                    <h4 className="mb-4">Order Summary</h4>
+                    <h4 className="mb-4">Краткое описание заказа</h4>
                     <div className="mb-4">
                       <div className="d-flex justify-content-between align-items-center">
-                        <span>Transaction ID</span>
+                        <span>Идентификатор транзакции</span>
                         <p className="mb-0 h6 fw-light">DES23853</p>
                       </div>
                     </div>
@@ -250,7 +250,7 @@ function Checkout() {
                         type="button"
                         className="btn btn-primary"
                       >
-                        Apply
+                        Применить
                       </button>
                     </div>
 
@@ -258,19 +258,19 @@ function Checkout() {
                       <h4 className="mb-3">Cart Total</h4>
                       <ul class="list-group mb-3">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Sub Total
+                        Подытог
                           <span>${order.sub_total}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Discount
+                        Скидка
                           <span>${order.saved}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Tax
+                        Налог
                           <span>${order.tax_fee}</span>
                         </li>
                         <li class="list-group-item d-flex fw-bold justify-content-between align-items-center">
-                          Total
+                        Весь
                           <span className="fw-bold">${order.total}</span>
                         </li>
                       </ul>
@@ -297,7 +297,7 @@ function Checkout() {
                               className="btn btn-lg btn-success mt-2 w-100"
                             >
                               {" "}
-                              Pay With Stripe
+                              Оплата с помощью Stripe
                             </button>
                           )}
                         </form>
@@ -335,10 +335,10 @@ function Checkout() {
                         </PayPalScriptProvider>
                       </div>
                       <p className="small mb-0 mt-2 text-center">
-                        By proceeding to payment, you agree to these{" "}
+                      Приступая к оплате, вы соглашаетесь с {" "}
                         <a href="#">
                           {" "}
-                          <strong>Terms of Service</strong>
+                          <strong>условиями обслуживания</strong>
                         </a>
                       </p>
                     </div>

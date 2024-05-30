@@ -51,18 +51,16 @@ function Success() {
             {orderMessage === "Payment Successfull" && (
               <>
                 <div className="col-lg-5">
-                  <h1 className="text-success">Enrollment Successful!</h1>
+                  <h1 className="text-success">Зачисление прошло успешно!</h1>
                   <p>
                     {" "}
-                    Hey there, you enrollment in the 2 courses where successful,
-                    visit your <a href="">My Courses</a> page, to view the
-                    courses now.
+                    Привет, вы записались на курс. Теперь вы можете посетить страницу <a href="">Мои курсы</a>.
                   </p>
                   <button
                     type="button"
                     className="btn btn-primary mb-0 rounded-2"
                   >
-                    View Enrolled Courses <i className="fas fa-arrow-right"></i>
+                    Просмотр зарегистрированных курсов <i className="fas fa-arrow-right"></i>
                   </button>
                 </div>
                 <div className="col-lg-7 text-center">
@@ -79,18 +77,16 @@ function Success() {
             {orderMessage === "Already Paid" && (
               <>
                 <div className="col-lg-5">
-                  <h1 className="text-success">Already Paid</h1>
+                  <h1 className="text-success">Уже оплачено</h1>
                   <p>
                     {" "}
-                    Hey there, you enrollment in the 2 courses where successful,
-                    visit your <a href="">My Courses</a> page, to view the
-                    courses now.
+                    Привет, вы записались на курс. Теперь вы можете посетить страницу <a href="">Мои курсы</a>.
                   </p>
                   <button
                     type="button"
                     className="btn btn-primary mb-0 rounded-2"
                   >
-                    View Enrolled Courses <i className="fas fa-arrow-right"></i>
+                    Просмотр зарегистрированных курсов <i className="fas fa-arrow-right"></i>
                   </button>
                 </div>
                 <div className="col-lg-7 text-center">
@@ -108,13 +104,12 @@ function Success() {
               <>
                 <div className="col-lg-5">
                   <h1 className="text-warning">
-                    Processing Payment{" "}
+                      Обработка платежа{" "}
                     <i className="fas fa-spinner fa-spin"></i>
                   </h1>
                   <p>
                     {" "}
-                    Hey there, hold on while we process your payment, please do
-                    not leave the page.
+                    Привет, подождите, пока мы обработаем ваш платеж, пожалуйста, не покидайте страницу.
                   </p>
                 </div>
                 <div className="col-lg-7 text-center">
@@ -134,14 +129,13 @@ function Success() {
                 <div className="col-lg-5">
                   <h1 className="text-danger">Payment Failed 😔</h1>
                   <p>
-                    Unfortunately, phew! Your payment did not go through. <br />{" "}
-                    Please try again.
+                  К сожалению, Ваш платеж не прошел. Повторите попытку.
                   </p>
                   <button
                     type="button"
                     className="btn btn-danger mb-0 rounded-2"
                   >
-                    Try again <i className="fas fa-repeat"></i>
+                    Повторить <i className="fas fa-repeat"></i>
                   </button>
                 </div>
                 <div className="col-lg-7 text-center">

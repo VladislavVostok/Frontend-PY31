@@ -40,7 +40,7 @@ function StudentCourseLectureDetail() {
                                                         {/* Tab item */}
                                                         <li className="nav-item me-2 me-sm-4" role="presentation">
                                                             <button className="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-1" type="button" role="tab" aria-controls="course-pills-1" aria-selected="true">
-                                                                Course Lectures
+                                                            Курс лекций
                                                             </button>
                                                         </li>
                                                         {/* Tab item */}
@@ -55,7 +55,7 @@ function StudentCourseLectureDetail() {
                                                                 aria-controls="course-pills-2"
                                                                 aria-selected="false"
                                                             >
-                                                                Notes
+                                                                Записи
                                                             </button>
                                                         </li>
                                                         {/* Tab item */}
@@ -70,7 +70,7 @@ function StudentCourseLectureDetail() {
                                                                 aria-controls="course-pills-3"
                                                                 aria-selected="false"
                                                             >
-                                                                Discussion
+                                                                Обсуждение
                                                             </button>
                                                         </li>
 
@@ -85,7 +85,7 @@ function StudentCourseLectureDetail() {
                                                                 aria-controls="course-pills-4"
                                                                 aria-selected="false"
                                                             >
-                                                                Leave a Review
+                                                                Оставить отзыв
                                                             </button>
                                                         </li>
                                                     </ul>
@@ -117,9 +117,9 @@ function StudentCourseLectureDetail() {
                                                                             aria-expanded="true"
                                                                             aria-controls="collapse-1"
                                                                         >
-                                                                            Introduction of Digital Marketing
+                                                                            Внедрение цифрового маркетинга
                                                                             <span className="small ms-0 ms-sm-2">
-                                                                                (3 Lectures)
+                                                                                (3 Лекции)
                                                                             </span>
                                                                         </button>
                                                                     </h6>
@@ -140,7 +140,7 @@ function StudentCourseLectureDetail() {
                                                                                         <i className="fas fa-play me-0" />
                                                                                     </a>
                                                                                     <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
-                                                                                        Introduction
+                                                                                    Вступление
                                                                                     </span>
                                                                                 </div>
                                                                                 <p className="mb-0">2m 10s</p>
@@ -157,11 +157,10 @@ function StudentCourseLectureDetail() {
                                                                                     </a>
                                                                                     <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
 
-                                                                                        What is Digital Marketing What is Digital
-                                                                                        Marketing
+                                                                                    Что такое цифровой маркетинг?
                                                                                     </span>
                                                                                 </div>
-                                                                                <p className="mb-0 text-truncate">15m 10s</p>
+                                                                                <p className="mb-0 text-truncate">15м 10с</p>
                                                                             </div>
                                                                             <hr /> {/* Divider */}
                                                                             {/* Course lecture */}
@@ -174,10 +173,10 @@ function StudentCourseLectureDetail() {
                                                                                         <i className="fas fa-lock me-0" />
                                                                                     </a>
                                                                                     <span className="d-inline-block text-truncate text-muted ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
-                                                                                        Type of Digital Marketing
+                                                                                        Тип цифрового маркетинга
                                                                                     </span>
                                                                                 </div>
-                                                                                <p className="mb-0">18m 10s</p>
+                                                                                <p className="mb-0">18м 10с</p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -193,9 +192,9 @@ function StudentCourseLectureDetail() {
                                                                             aria-expanded="false"
                                                                             aria-controls="collapse-2"
                                                                         >
-                                                                            Customer Life cycle
+                                                                            Жизненный цикл клиента
                                                                             <span className="small ms-0 ms-sm-2">
-                                                                                (4 Lectures)
+                                                                                (4 Лекции)
                                                                             </span>
                                                                         </button>
                                                                     </h6>
@@ -217,10 +216,10 @@ function StudentCourseLectureDetail() {
                                                                                         <i className="fas fa-play me-0" />
                                                                                     </a>
                                                                                     <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
-                                                                                        What is Digital Marketing
+                                                                                        Что такое цифровой маркетинг?
                                                                                     </span>
                                                                                 </div>
-                                                                                <p className="mb-0">11m 20s</p>
+                                                                                <p className="mb-0">11м 20с</p>
                                                                             </div>
                                                                             <hr /> {/* Divider */}
                                                                             {/* Course lecture */}
@@ -233,7 +232,7 @@ function StudentCourseLectureDetail() {
                                                                                         <i className="fas fa-play me-0" />
                                                                                     </a>
                                                                                     <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
-                                                                                        15 Tips for Writing Magnetic Headlines
+                                                                                    15 советов по написанию магнитных заголовков
                                                                                     </span>
                                                                                 </div>
                                                                                 <p className="mb-0 text-truncate">25m 20s</p>
@@ -249,7 +248,7 @@ function StudentCourseLectureDetail() {
                                                                                         <i className="fas fa-play me-0" />
                                                                                     </a>
                                                                                     <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
-                                                                                        How to Write Like Your Customers Talk
+                                                                                    Как писать так, как говорят Ваши клиенты
                                                                                     </span>
                                                                                 </div>
                                                                                 <p className="mb-0">11m 30s</p>
@@ -271,19 +270,19 @@ function StudentCourseLectureDetail() {
                                                                                     <div className="row g-sm-0 align-items-center">
                                                                                         <div className="col-sm-6">
                                                                                             <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-md-400px">
-                                                                                                How to Flip Features Into Benefits
+                                                                                                Как превратить Функции в преимущества
                                                                                             </span>
                                                                                         </div>
                                                                                         <div className="col-sm-6">
                                                                                             <span className="badge text-bg-orange ms-2 ms-md-0">
                                                                                                 <i className="fas fa-lock fa-fw me-1" />
-                                                                                                Premium
+                                                                                                Высший сорт
                                                                                             </span>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                                 <p className="mb-0 d-inline-block text-truncate w-70px w-sm-60px">
-                                                                                    35m 30s
+                                                                                    35м 30с
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -301,9 +300,9 @@ function StudentCourseLectureDetail() {
                                                                             aria-expanded="false"
                                                                             aria-controls="collapse-5"
                                                                         >
-                                                                            What is Search Engine Optimization(SEO)
+                                                                            Что такое поисковая оптимизация (SEO)
                                                                             <span className="small ms-0 ms-sm-2">
-                                                                                (10 Lectures)
+                                                                                (10 Лекции)
                                                                             </span>
                                                                         </button>
                                                                     </h6>

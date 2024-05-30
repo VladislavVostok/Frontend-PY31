@@ -98,7 +98,7 @@ function Search() {
             <div className="col-12">
               <div className="mb-6">
                 <h2 className="mb-1 h1">
-                  Showing Results for "{searchQuery || "No Search Query"}"
+                Отображение результатов для "{searchQuery || "Нет поискового запроса"}"
                 </h2>
               </div>
             </div>
@@ -107,7 +107,7 @@ function Search() {
                 <input
                   type="text"
                   className="form-control lg mt-3"
-                  placeholder="Search Courses..."
+                  placeholder="Поиск..."
                   name=""
                   id=""
                   onChange={handleSeach}
@@ -155,9 +155,9 @@ function Search() {
                             {c.title}
                           </Link>
                         </h4>
-                        <small>By: {c.teacher.full_name}</small> <br />
+                        <small>{c.teacher.full_name}</small> <br />
                         <small>
-                          {c.students?.length} Student
+                          {c.students?.length} Студент
                           {c.students?.length > 1 && "s"}
                         </small>{" "}
                         <br />
@@ -169,7 +169,7 @@ function Search() {
                           </span>
                           <span className="text-warning">4.5</span>
                           <span className="fs-6 ms-2">
-                            ({c.reviews?.length} Reviews)
+                            ({c.reviews?.length} Отзывы)
                           </span>
                         </div>
                       </div>
@@ -199,7 +199,7 @@ function Search() {
                               to={""}
                               className="text-inherit text-decoration-none btn btn-primary"
                             >
-                              Enroll Now{" "}
+                              Записаться{" "}
                               <i className="fas fa-arrow-right text-primary align-middle me-2 text-white" />
                             </Link>
                           </div>
@@ -215,7 +215,7 @@ function Search() {
                   <li className="">
                     <button className="page-link me-1">
                       <i className="ci-arrow-left me-2" />
-                      Previous
+                      Предыдущий
                     </button>
                   </li>
                 </ul>
@@ -227,7 +227,7 @@ function Search() {
                 <ul className="pagination">
                   <li className={`totalPages`}>
                     <button className="page-link ms-1">
-                      Next
+                      Следующий
                       <i className="ci-arrow-right ms-3" />
                     </button>
                   </li>
@@ -272,14 +272,12 @@ function Search() {
             <div className="col-lg-5 col-12">
               <div className="text-white p-5 p-lg-0">
                 {/* text */}
-                <h2 className="h1 text-white">Become an instructor today</h2>
+                <h2 className="h1 text-white">Станьте инструктором уже сегодня</h2>
                 <p className="mb-0">
-                  Instructors from around the world teach millions of students
-                  on Geeks. We provide the tools and skills to teach what you
-                  love.
+                Преподаватели со всего мира обучают миллионы студентов. Мы предоставляем инструменты и навыки, чтобы научить вас тому, чему вы любовь.
                 </p>
                 <a href="#" className="btn bg-white text-dark fw-bold mt-4">
-                  Start Teaching Today <i className="fas fa-arrow-right"></i>
+                  Начните преподавать уже сегодня <i className="fas fa-arrow-right"></i>
                 </a>
               </div>
             </div>

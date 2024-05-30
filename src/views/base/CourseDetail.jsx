@@ -152,7 +152,7 @@ function CourseDetail() {
                               aria-controls="course-pills-1"
                               aria-selected="true"
                             >
-                              Overview
+                              Обзор
                             </button>
                           </li>
                           {/* Tab item */}
@@ -170,7 +170,7 @@ function CourseDetail() {
                               aria-controls="course-pills-2"
                               aria-selected="false"
                             >
-                              Curriculum
+                              Курс обучения
                             </button>
                           </li>
                           {/* Tab item */}
@@ -188,7 +188,7 @@ function CourseDetail() {
                               aria-controls="course-pills-3"
                               aria-selected="false"
                             >
-                              Instructor
+                              Инструктор
                             </button>
                           </li>
                           {/* Tab item */}
@@ -206,7 +206,7 @@ function CourseDetail() {
                               aria-controls="course-pills-4"
                               aria-selected="false"
                             >
-                              Reviews
+                              Отзывы
                             </button>
                           </li>
                           {/* Tab item */}
@@ -224,7 +224,7 @@ function CourseDetail() {
                               aria-controls="course-pills-5"
                               aria-selected="false"
                             >
-                              FAQs
+                              FAQ
                             </button>
                           </li>
                           {/* Tab item */}
@@ -242,7 +242,7 @@ function CourseDetail() {
                               aria-controls="course-pills-6"
                               aria-selected="false"
                             >
-                              Comment
+                              Комментарий
                             </button>
                           </li>
                         </ul>
@@ -261,7 +261,7 @@ function CourseDetail() {
                             role="tabpanel"
                             aria-labelledby="course-pills-tab-1"
                           >
-                            <h5 className="mb-3">Course Description</h5>
+                            <h5 className="mb-3">Описание курса</h5>
                             <p
                               className="mb-3"
                               dangerouslySetInnerHTML={{
@@ -402,7 +402,7 @@ function CourseDetail() {
                             </div>
                             {/* Card END */}
                             {/* Instructor info */}
-                            <h5 className="mb-3">About Instructor</h5>
+                            <h5 className="mb-3">Об инструкторе</h5>
                             <p className="mb-3">{course.teacher.about}</p>
                           </div>
                           <div
@@ -413,7 +413,7 @@ function CourseDetail() {
                           >
                             {/* Review START */}
                             <div className="row mb-1">
-                              <h5 className="mb-4">Our Student Reviews</h5>
+                              <h5 className="mb-4">Отзывы наших студентов</h5>
                             </div>
 
                             <div className="row">
@@ -434,7 +434,7 @@ function CourseDetail() {
                                 {/* Text */}
                                 <div>
                                   <div className="d-sm-flex mt-1 mt-md-0 align-items-center">
-                                    <h5 className="me-3 mb-0">Sam Jay</h5>
+                                    <h5 className="me-3 mb-0">Василий Стрельников</h5>
                                     {/* Review star */}
                                     <ul className="list-inline mb-0">
                                       <i className="fas fa-star text-warning" />
@@ -445,15 +445,12 @@ function CourseDetail() {
                                     </ul>
                                   </div>
                                   {/* Info */}
-                                  <p className="small mb-2">5 days ago</p>
+                                  <p className="small mb-2">5 дней назад</p>
                                   <p className="mb-2">
-                                    Perceived end knowledge certainly day
-                                    sweetness why cordially. Ask a quick six
-                                    seven offer see among. Handsome met debating
-                                    sir dwelling age material. As style lived he
-                                    worse dried. Offered related so visitors we
-                                    private removed. Moderate do subjects to
-                                    distance.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quisquam et quidem cumque aliquam similique praesentium
+                                    laboriosam tempora quibusdam ab est odio fugit quia quo,
+                                    laudantium velit, voluptas, dolor accusamus. Aliquam.
                                   </p>
                                   {/* Like and dislike button */}
                                 </div>
@@ -480,7 +477,7 @@ function CourseDetail() {
                                 {/* Text */}
                                 <div>
                                   <div className="d-sm-flex mt-1 mt-md-0 align-items-center">
-                                    <h5 className="me-3 mb-0">Benny Doggo</h5>
+                                    <h5 className="me-3 mb-0">Шаламов Виктор</h5>
                                     {/* Review star */}
                                     <ul className="list-inline mb-0">
                                       <li className="list-inline-item me-0">
@@ -501,12 +498,12 @@ function CourseDetail() {
                                     </ul>
                                   </div>
                                   {/* Info */}
-                                  <p className="small mb-2">2 days ago</p>
+                                  <p className="small mb-2">2 дня назад</p>
                                   <p className="mb-2">
-                                    Handsome met debating sir dwelling age
-                                    material. As style lived he worse dried.
-                                    Offered related so visitors we private
-                                    removed. Moderate do subjects to distance.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veritatis voluptate consequatur impedit, voluptatum dolorum voluptatibus
+                                    iure itaque nobis cupiditate labore adipisci dolorem. Unde beatae,
+                                    possimus dignissimos sunt in repellat hic!
                                   </p>
                                 </div>
                               </div>
@@ -517,7 +514,7 @@ function CourseDetail() {
                             {/* Student review END */}
                             {/* Leave Review START */}
                             <div className="mt-2">
-                              <h5 className="mb-4">Leave a Review</h5>
+                              <h5 className="mb-4">Оставить отзыв</h5>
                               <form className="row g-3">
                                 {/* Rating */}
                                 <div className="col-12 bg-light-input">
@@ -548,7 +545,7 @@ function CourseDetail() {
                                     type="submit"
                                     className="btn btn-primary mb-0"
                                   >
-                                    Post Review
+                                    Оставить отзыв
                                   </button>
                                 </div>
                               </form>
@@ -564,7 +561,7 @@ function CourseDetail() {
                             aria-labelledby="course-pills-tab-5"
                           >
                             {/* Title */}
-                            <h5 className="mb-3">Frequently Asked Questions</h5>
+                            <h5 className="mb-3">Часто задаваемые вопросы</h5>
                             {/* Accordion START */}
                             <div
                               className="accordion accordion-flush"
@@ -588,7 +585,7 @@ function CourseDetail() {
                                       01
                                     </span>
                                     <span className="h6 mb-0">
-                                      How Digital Marketing Work?
+                                      Как работает цифровой маркетинг?
                                     </span>
                                   </button>
                                 </h2>
@@ -599,15 +596,10 @@ function CourseDetail() {
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div className="accordion-body pt-0">
-                                    Comfort reached gay perhaps chamber his six
-                                    detract besides add. Moonlight newspaper up
-                                    its enjoyment agreeable depending. Timed
-                                    voice share led him to widen noisy young. At
-                                    weddings believed laughing although the
-                                    material does the exercise of. Up attempt
-                                    offered ye civilly so sitting to. She new
-                                    course gets living within Elinor joy. She
-                                    rapturous suffering concealed.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Omnis quibusdam excepturi reiciendis beatae aperiam blanditiis
+                                    modi facilis deleniti minus assumenda ullam numquam alias, culpa
+                                    rerum a voluptatum eius, harum veniam?
                                   </div>
                                 </div>
                               </div>
@@ -629,7 +621,7 @@ function CourseDetail() {
                                       02
                                     </span>
                                     <span className="h6 mb-0">
-                                      What is SEO?
+                                      Что такое SEO?
                                     </span>
                                   </button>
                                 </h2>
@@ -640,43 +632,11 @@ function CourseDetail() {
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div className="accordion-body pt-0">
-                                    Pleasure and so read the was hope entire
-                                    first decided the so must have as on was
-                                    want up of I will rival in came this touched
-                                    got a physics to travelling so all
-                                    especially refinement monstrous desk they
-                                    was arrange the overall helplessly out of
-                                    particularly ill are purer.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius itaque consequatur beatae! Omnis consectetur, amet dolorem, praesentium soluta natus eum corporis ut ullam quisquam ad. Magni, a. Facilis, ratione labore?
                                     <p className="mt-2">
-                                      Person she control of to beginnings view
-                                      looked eyes Than continues its and because
-                                      and given and shown creating curiously to
-                                      more in are man were smaller by we instead
-                                      the these sighed Avoid in the sufficient
-                                      me real man longer of his how her for
-                                      countries to brains warned notch important
-                                      Finds be to the of on the increased
-                                      explain noise of power deep asking
-                                      contribution this live of suppliers goals
-                                      bit separated poured sort several the was
-                                      organization the if relations go work
-                                      after mechanic But we've area wasn't
-                                      everything needs of and doctor where
-                                      would.
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit fuga impedit est blanditiis tenetur perferendis commodi aspernatur accusamus quam distinctio quo numquam possimus, veritatis animi corrupti, atque ratione corporis nostrum?
                                     </p>
-                                    Go he prisoners And mountains in just
-                                    switching city steps Might rung line what Mr
-                                    Bulk; Was or between towards the have phase
-                                    were its world my samples are the was royal
-                                    he luxury the about trying And on he to my
-                                    enough is was the remember a although lead
-                                    in were through serving their assistant fame
-                                    day have for its after would cheek dull have
-                                    what in go feedback assignment Her of a any
-                                    help if the a of semantics is rational
-                                    overhauls following in from our hazardous
-                                    and used more he themselves the parents up
-                                    just regulatory.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam reprehenderit possimus minima architecto ad eligendi amet illum eveniet illo. Eius similique reprehenderit incidunt nostrum facere voluptas cumque totam eum ipsum.
                                   </div>
                                 </div>
                               </div>
@@ -698,7 +658,7 @@ function CourseDetail() {
                                       03
                                     </span>
                                     <span className="h6 mb-0">
-                                      Who should join this course?
+                                      Кому стоит записаться на этот курс?
                                     </span>
                                   </button>
                                 </h2>
@@ -709,80 +669,15 @@ function CourseDetail() {
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div className="accordion-body pt-0">
-                                    Post no so what deal evil rent by real in.
-                                    But her ready least set lived spite solid.
-                                    September how men saw tolerably two behavior
-                                    arranging. She offices for highest and
-                                    replied one venture pasture. Applauded no
-                                    discovery in newspaper allowance am
-                                    northward. Frequently partiality possession
-                                    resolution at or appearance unaffected me.
-                                    Engaged its was the evident pleased husband.
-                                    Ye goodness felicity do disposal dwelling
-                                    no. First am plate jokes to began to cause a
-                                    scale.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit cupiditate deleniti molestiae, dicta velit aliquid modi incidunt! Illum eos eligendi at. Laudantium voluptate libero optio dicta harum adipisci perferendis placeat!
                                     <strong>
-                                      Subjects he prospect elegance followed no
-                                      overcame
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </strong>
                                     possible it on.
                                   </div>
                                 </div>
                               </div>
-                              {/* Item */}
-                              <div className="accordion-item">
-                                <h2
-                                  className="accordion-header"
-                                  id="headingFour"
-                                >
-                                  <button
-                                    className="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFour"
-                                  >
-                                    <span className="text-secondary fw-bold me-3">
-                                      04
-                                    </span>
-                                    <span className="h6 mb-0">
-                                      What are the T&amp;C for this program?
-                                    </span>
-                                  </button>
-                                </h2>
-                                <div
-                                  id="collapseFour"
-                                  className="accordion-collapse collapse"
-                                  aria-labelledby="headingFour"
-                                  data-bs-parent="#accordionExample"
-                                >
-                                  <div className="accordion-body pt-0">
-                                    Night signs creeping yielding green Seasons
-                                    together man green fruitful make fish behold
-                                    earth unto you'll lights living moving sea
-                                    open for fish day multiply tree good female
-                                    god had fruitful of creature fill shall
-                                    don't day fourth lesser he the isn't let
-                                    multiply may Creeping earth under was You're
-                                    without which image stars in Own creeping
-                                    night of wherein Heaven years their he over
-                                    doesn't whose won't kind seasons light Won't
-                                    that fish him whose won't also it dominion
-                                    heaven fruitful Whales created And likeness
-                                    doesn't that Years without divided saying
-                                    morning creeping hath you'll seas cattle in
-                                    multiply under together in us said above dry
-                                    tree herb saw living darkness without have
-                                    won't for i behold meat brought winged
-                                    Moving living second beast Over fish place
-                                    beast image very him evening Thing they're
-                                    fruit together forth day Seed lights Land
-                                    creature together Multiply waters form
-                                    brought.
-                                  </div>
-                                </div>
-                              </div>
+
                               {/* Item */}
                               <div className="accordion-item">
                                 <h2
@@ -798,11 +693,10 @@ function CourseDetail() {
                                     aria-controls="collapseFive"
                                   >
                                     <span className="text-secondary fw-bold me-3">
-                                      05
+                                      04
                                     </span>
                                     <span className="h6 mb-0">
-                                      What certificates will I be received for
-                                      this program?
+                                      Какие сертификаты я получу по этой программе?
                                     </span>
                                   </button>
                                 </h2>
@@ -813,17 +707,7 @@ function CourseDetail() {
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div className="accordion-body pt-0">
-                                    Smile spoke total few great had never their
-                                    too Amongst moments do in arrived at my
-                                    replied Fat weddings servants but man
-                                    believed prospect Companions understood is
-                                    as especially pianoforte connection
-                                    introduced Nay newspaper can sportsman are
-                                    admitting gentleman belonging his Is oppose
-                                    no he summer lovers twenty in Not his
-                                    difficulty boisterous surrounded bed Seems
-                                    folly if in given scale Sex contented
-                                    dependent conveying advantage.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ullam quos, voluptas aspernatur laborum amet rerum sunt pariatur a quo, recusandae porro corporis eligendi praesentium harum laboriosam voluptates, rem iusto!
                                   </div>
                                 </div>
                               </div>
@@ -841,7 +725,7 @@ function CourseDetail() {
                             {/* Review START */}
                             <div className="row">
                               <div className="col-12">
-                                <h5 className="mb-4">Group Chat & Q/A Forum</h5>
+                                <h5 className="mb-4">Групповой чат и форум</h5>
 
                                 {/* Comment item START */}
                                 <div className="border p-2 p-sm-4 rounded-3 mb-4">
@@ -859,24 +743,19 @@ function CourseDetail() {
                                                     className="text-decoration-none text-dark"
                                                   >
                                                     <span className="text-secondary">
-                                                      By:
+                                                      От:
                                                     </span>{" "}
-                                                    Frances Guerrero{" "}
+                                                    Петр Евдокимов{" "}
                                                   </a>
                                                 </h6>
                                                 <p className="mb-0">
-                                                  Removed demands expense
-                                                  account in outward tedious do.
-                                                  Particular waythoroughly
-                                                  unaffected projection ar
-                                                  waythoroughly unaffected
-                                                  projection?...
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus alias quasi quis sunt animi accusamus architecto perspiciatis veniam cum quos neque maxime aspernatur voluptas eum inventore impedit, iure distinctio quisquam?
                                                 </p>
                                                 <p className="mt-4 fw-bold">
-                                                  16 Replies
+                                                  16 ответов
                                                 </p>
                                               </div>
-                                              <small>5hr</small>
+                                              <small>5 ч</small>
                                             </div>
                                           </div>
                                           {/* Comment react */}
@@ -886,7 +765,7 @@ function CourseDetail() {
                                                 className="btn btn-primary btn-sm"
                                                 href="#"
                                               >
-                                                Join Conversation{" "}
+                                                Присоединиться к беседе{" "}
                                                 <i className="fas fa-arrow-right"></i>
                                               </a>
                                             </li>
@@ -908,24 +787,19 @@ function CourseDetail() {
                                                     className="text-decoration-none text-dark"
                                                   >
                                                     <span className="text-secondary">
-                                                      By:
+                                                      от:
                                                     </span>{" "}
-                                                    Frances Guerrero{" "}
+                                                    Михаила Таля{" "}
                                                   </a>
                                                 </h6>
                                                 <p className="mb-0">
-                                                  Removed demands expense
-                                                  account in outward tedious do.
-                                                  Particular waythoroughly
-                                                  unaffected projection ar
-                                                  waythoroughly unaffected
-                                                  projection?...
+                                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis numquam, nihil dolore inventore officiis sapiente vitae fuga quis sint, autem aliquid molestias corporis dignissimos suscipit nisi ratione. Modi, dolorum explicabo.
                                                 </p>
                                                 <p className="mt-4 fw-bold">
-                                                  16 Replies
+                                                  16 ответов
                                                 </p>
                                               </div>
-                                              <small>5hr</small>
+                                              <small>5 ч</small>
                                             </div>
                                           </div>
                                           {/* Comment react */}
@@ -935,7 +809,7 @@ function CourseDetail() {
                                                 className="btn btn-primary btn-sm"
                                                 href="#"
                                               >
-                                                Join Conversation{" "}
+                                                Присоединиться к беседе{" "}
                                                 <i className="fas fa-arrow-right"></i>
                                               </a>
                                             </li>
@@ -995,8 +869,7 @@ function CourseDetail() {
                                                   </span>
                                                 </h6>
                                                 <p className="mb-0 mt-3  ">
-                                                  Removed demands expense
-                                                  account
+                                                  Удаленный счет расходов по запросам
                                                 </p>
                                               </div>
                                             </div>
@@ -1033,7 +906,7 @@ function CourseDetail() {
                                                     className="text-decoration-none text-dark"
                                                   >
                                                     {" "}
-                                                    Louis Ferguson{" "}
+                                                    Джафар ибн-Хабиби{" "}
                                                   </a>
                                                   <br />
                                                   <span
@@ -1042,14 +915,11 @@ function CourseDetail() {
                                                       color: "gray",
                                                     }}
                                                   >
-                                                    5hrs Ago
+                                                    5 ч назад
                                                   </span>
                                                 </h6>
                                                 <p className="mb-0 mt-3  ">
-                                                  Removed demands expense
-                                                  account from the debby
-                                                  building in a hall town tak
-                                                  with
+                                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                 </p>
                                               </div>
                                             </div>
@@ -1086,7 +956,7 @@ function CourseDetail() {
                                                     className="text-decoration-none text-dark"
                                                   >
                                                     {" "}
-                                                    Louis Ferguson{" "}
+                                                    Луис Скабетта{" "}
                                                   </a>
                                                   <br />
                                                   <span
@@ -1095,12 +965,11 @@ function CourseDetail() {
                                                       color: "gray",
                                                     }}
                                                   >
-                                                    5hrs Ago
+                                                    5 ч назад
                                                   </span>
                                                 </h6>
                                                 <p className="mb-0 mt-3  ">
-                                                  Removed demands expense
-                                                  account
+                                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                                 </p>
                                               </div>
                                             </div>
@@ -1172,7 +1041,7 @@ function CourseDetail() {
                                       class="btn btn-primary ms-2 mb-0 w-25"
                                       type="button"
                                     >
-                                      Post{" "}
+                                      Опубликовать{" "}
                                       <i className="fas fa-paper-plane"></i>
                                     </button>
                                   </form>
@@ -1184,6 +1053,8 @@ function CourseDetail() {
                       </div>
                     </div>
                   </div>
+
+
                   {/* Main content END */}
                   {/* Right sidebar START */}
                   <div className="col-lg-4 pt-5 pt-lg-0">
@@ -1216,7 +1087,7 @@ function CourseDetail() {
                                 data-bs-target="#exampleModal"
                                 className="fw-bold"
                               >
-                                Course Introduction Video
+                                Вступительное видео к курсу
                               </span>
 
                               <div
@@ -1233,7 +1104,7 @@ function CourseDetail() {
                                         className="modal-title fs-5"
                                         id="exampleModalLabel"
                                       >
-                                        Introduction Videos
+                                        Ознакомительные видеоролики
                                       </h1>
                                       <button
                                         type="button"
@@ -1249,13 +1120,13 @@ function CourseDetail() {
                                         className="btn btn-secondary"
                                         data-bs-dismiss="modal"
                                       >
-                                        Close
+                                        Закрыть
                                       </button>
                                       <button
                                         type="button"
                                         className="btn btn-primary"
                                       >
-                                        Save changes
+                                        Сохранить
                                       </button>
                                     </div>
                                   </div>
@@ -1314,7 +1185,7 @@ function CourseDetail() {
                                   <li>
                                     <a className="dropdown-item" href="#">
                                       <i className="fas fa-copy me-2" />
-                                      Copy link
+                                      Копировать ссылку
                                     </a>
                                   </li>
                                 </ul>
@@ -1336,8 +1207,7 @@ function CourseDetail() {
                                     )
                                   }
                                 >
-                                  <i className="fas fa-shopping-cart"></i> Add
-                                  To Cart
+                                  <i className="fas fa-shopping-cart"></i> Добавить в корзину
                                 </button>
                               )}
 
@@ -1355,8 +1225,7 @@ function CourseDetail() {
                                     )
                                   }
                                 >
-                                  <i className="fas fa-check-circle"></i> Added
-                                  To Cart
+                                  <i className="fas fa-check-circle"></i> Добавлено в корзину
                                 </button>
                               )}
 
@@ -1375,14 +1244,14 @@ function CourseDetail() {
                                   }
                                 >
                                   <i className="fas fa-spinner fa-spin"></i>{" "}
-                                  Adding To Cart
+                                  Добавление в корзину
                                 </button>
                               )}
                               <Link
                                 to="/cart/"
                                 className="btn btn-success mb-0 w-100"
                               >
-                                Enroll Now{" "}
+                                Зарегистрируйтесь{" "}
                                 <i className="fas fa-arrow-right"></i>
                               </Link>
                             </div>
@@ -1397,44 +1266,44 @@ function CourseDetail() {
                             <li className="list-group-item d-flex justify-content-between align-items-center">
                               <span className="h6 fw-light mb-0">
                                 <i className="fas fa-fw fa-book-open text-primary me-2" />
-                                Lectures
+                                Лекции
                               </span>
                               <span>30</span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-center d-none">
                               <span className="h6 fw-light mb-0">
                                 <i className="fas fa-fw fa-clock text-primary me-2" />
-                                Duration
+                                Продолжительность
                               </span>
-                              <span>4h 50m</span>
+                              <span>4ч 50м</span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-center">
                               <span className="h6 fw-light mb-0">
                                 <i className="fas fa-fw fa-signal text-primary me-2" />
-                                Skills
+                                Навыки
                               </span>
-                              <span>Beginner</span>
+                              <span>Начинающий</span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-center">
                               <span className="h6 fw-light mb-0">
                                 <i className="fas fa-fw fa-globe text-primary me-2" />
-                                Language
+                                Язык
                               </span>
                               <span>English</span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-center">
                               <span className="h6 fw-light mb-0">
                                 <i className="fas fa-fw fa-user-clock text-primary me-2" />
-                                Published
+                                Опубликован
                               </span>
-                              <span>7th August, 2025</span>
+                              <span>7 Августа, 2025</span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-center">
                               <span className="h6 fw-light mb-0">
                                 <i className="fas fa-fw fa-medal text-primary me-2" />
-                                Certificate
+                                Сертификат
                               </span>
-                              <span>Yes</span>
+                              <span>Да</span>
                             </li>
                           </ul>
                         </div>
@@ -1454,10 +1323,9 @@ function CourseDetail() {
                   {/* col */}
                   <div className="col-12">
                     <div className="mb-6">
-                      <h2 className="mb-1 h1">Related Courses</h2>
+                      <h2 className="mb-1 h1">Сопутствующие курсы</h2>
                       <p>
-                        These are the most popular courses among Geeks Courses
-                        learners worldwide in year 2022
+                        Это самые популярные курсы среди гиков, изучающих курсы во всем мире в 2022 году
                       </p>
                     </div>
                   </div>
@@ -1479,7 +1347,7 @@ function CourseDetail() {
                           <div className="card-body">
                             <div className="d-flex justify-content-between align-items-center mb-3">
                               <span className="badge bg-info">
-                                Intermediate
+                                Промежуточный
                               </span>
                               <a href="#" className="fs-5">
                                 <i className="fas fa-heart text-danger align-middle" />
@@ -1490,11 +1358,11 @@ function CourseDetail() {
                                 to={`/course-detail/slug/`}
                                 className="text-inherit text-decoration-none text-dark fs-5"
                               >
-                                How to easily create a website with JavaScript
+                                Как легко создать веб-сайт с помощью JavaScript
                               </Link>
                             </h4>
-                            <small>By: Claire Evans</small> <br />
-                            <small>16k Students</small> <br />
+                            <small>От: Клары Пожарской</small> <br />
+                            <small>16 тыс. студентов</small> <br />
                             <div className="lh-1 mt-3 d-flex">
                               <span className="align-text-top">
                                 <span className="fs-6">
@@ -1521,7 +1389,72 @@ function CourseDetail() {
                                   className="text-inherit text-decoration-none btn btn-primary"
                                 >
                                   <i className="fas fa-shopping-cart text-primary align-middle me-2 text-white" />
-                                  Enroll Now
+                                  Зарегистрироваться
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col">
+                        {/* Card */}
+                        {/* Card */}
+                        <div className="card card-hover">
+                          <Link to={`/course-detail/slug/`}>
+                            <img
+                              src="https://geeksui.codescandy.com/geeks/assets/images/course/course-css.jpg"
+                              alt="course"
+                              className="card-img-top"
+                            />
+                          </Link>
+                          {/* Card Body */}
+                          <div className="card-body">
+                            <div className="d-flex justify-content-between align-items-center mb-3">
+                              <span className="badge bg-info">
+                                Промежуточный
+                              </span>
+                              <a href="#" className="fs-5">
+                                <i className="fas fa-heart text-danger align-middle" />
+                              </a>
+                            </div>
+                            <h4 className="mb-2 text-truncate-line-2 ">
+                              <Link
+                                to={`/course-detail/slug/`}
+                                className="text-inherit text-decoration-none text-dark fs-5"
+                              >
+                                Как легко создать веб-сайт с помощью JavaScript
+                              </Link>
+                            </h4>
+                            <small>От: Клары Пожарской</small> <br />
+                            <small>16 тыс. студентов</small> <br />
+                            <div className="lh-1 mt-3 d-flex">
+                              <span className="align-text-top">
+                                <span className="fs-6">
+                                  <i className="fas fa-star text-warning"></i>
+                                  <i className="fas fa-star text-warning"></i>
+                                  <i className="fas fa-star text-warning"></i>
+                                  <i className="fas fa-star text-warning"></i>
+                                  <i className="fas fa-star-half text-warning"></i>
+                                </span>
+                              </span>
+                              <span className="text-warning">4.5</span>
+                              <span className="fs-6 ms-2">(9,300)</span>
+                            </div>
+                          </div>
+                          {/* Card Footer */}
+                          <div className="card-footer">
+                            <div className="row align-items-center g-0">
+                              <div className="col">
+                                <h5 className="mb-0">$39.00</h5>
+                              </div>
+                              <div className="col-auto">
+                                <a
+                                  href="#"
+                                  className="text-inherit text-decoration-none btn btn-primary"
+                                >
+                                  <i className="fas fa-shopping-cart text-primary align-middle me-2 text-white" />
+                                  Зарегистрироваться
                                 </a>
                               </div>
                             </div>
@@ -1534,7 +1467,7 @@ function CourseDetail() {
                         <div className="card card-hover">
                           <Link to={`/course-detail/slug/`}>
                             <img
-                              src="https://geeksui.codescandy.com/geeks/assets/images/course/course-angular.jpg"
+                              src="https://geeksui.codescandy.com/geeks/assets/images/course/course-css.jpg"
                               alt="course"
                               className="card-img-top"
                             />
@@ -1543,7 +1476,7 @@ function CourseDetail() {
                           <div className="card-body">
                             <div className="d-flex justify-content-between align-items-center mb-3">
                               <span className="badge bg-info">
-                                Intermediate
+                                Промежуточный
                               </span>
                               <a href="#" className="fs-5">
                                 <i className="fas fa-heart text-danger align-middle" />
@@ -1554,11 +1487,11 @@ function CourseDetail() {
                                 to={`/course-detail/slug/`}
                                 className="text-inherit text-decoration-none text-dark fs-5"
                               >
-                                How to easily create a website with JavaScript
+                                Как легко создать веб-сайт с помощью JavaScript
                               </Link>
                             </h4>
-                            <small>By: Claire Evans</small> <br />
-                            <small>16k Students</small> <br />
+                            <small>От: Клары Пожарской</small> <br />
+                            <small>16 тыс. студентов</small> <br />
                             <div className="lh-1 mt-3 d-flex">
                               <span className="align-text-top">
                                 <span className="fs-6">
@@ -1585,7 +1518,7 @@ function CourseDetail() {
                                   className="text-inherit text-decoration-none btn btn-primary"
                                 >
                                   <i className="fas fa-shopping-cart text-primary align-middle me-2 text-white" />
-                                  Enroll Now
+                                  Зарегистрироваться
                                 </a>
                               </div>
                             </div>
@@ -1598,7 +1531,7 @@ function CourseDetail() {
                         <div className="card card-hover">
                           <Link to={`/course-detail/slug/`}>
                             <img
-                              src="https://geeksui.codescandy.com/geeks/assets/images/course/course-react.jpg"
+                              src="https://geeksui.codescandy.com/geeks/assets/images/course/course-css.jpg"
                               alt="course"
                               className="card-img-top"
                             />
@@ -1607,7 +1540,7 @@ function CourseDetail() {
                           <div className="card-body">
                             <div className="d-flex justify-content-between align-items-center mb-3">
                               <span className="badge bg-info">
-                                Intermediate
+                                Промежуточный
                               </span>
                               <a href="#" className="fs-5">
                                 <i className="fas fa-heart text-danger align-middle" />
@@ -1618,12 +1551,11 @@ function CourseDetail() {
                                 to={`/course-detail/slug/`}
                                 className="text-inherit text-decoration-none text-dark fs-5"
                               >
-                                Learn React.Js for Beginners from Start to
-                                Finish
+                                Как легко создать веб-сайт с помощью JavaScript
                               </Link>
                             </h4>
-                            <small>By: Claire Evans</small> <br />
-                            <small>16k Students</small> <br />
+                            <small>От: Клары Пожарской</small> <br />
+                            <small>16 тыс. студентов</small> <br />
                             <div className="lh-1 mt-3 d-flex">
                               <span className="align-text-top">
                                 <span className="fs-6">
@@ -1650,71 +1582,7 @@ function CourseDetail() {
                                   className="text-inherit text-decoration-none btn btn-primary"
                                 >
                                   <i className="fas fa-shopping-cart text-primary align-middle me-2 text-white" />
-                                  Enroll Now
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="col">
-                        {/* Card */}
-                        <div className="card card-hover">
-                          <Link to={`/course-detail/slug/`}>
-                            <img
-                              src="https://geeksui.codescandy.com/geeks/assets/images/course/course-python.jpg"
-                              alt="course"
-                              className="card-img-top"
-                            />
-                          </Link>
-                          {/* Card Body */}
-                          <div className="card-body">
-                            <div className="d-flex justify-content-between align-items-center mb-3">
-                              <span className="badge bg-info">
-                                Intermediate
-                              </span>
-                              <a href="#" className="fs-5">
-                                <i className="fas fa-heart text-danger align-middle" />
-                              </a>
-                            </div>
-                            <h4 className="mb-2 text-truncate-line-2 ">
-                              <Link
-                                to={`/course-detail/slug/`}
-                                className="text-inherit text-decoration-none text-dark fs-5"
-                              >
-                                How to easily create a website with JavaScript
-                              </Link>
-                            </h4>
-                            <small>By: Claire Evans</small> <br />
-                            <small>16k Students</small> <br />
-                            <div className="lh-1 mt-3 d-flex">
-                              <span className="align-text-top">
-                                <span className="fs-6">
-                                  <i className="fas fa-star text-warning"></i>
-                                  <i className="fas fa-star text-warning"></i>
-                                  <i className="fas fa-star text-warning"></i>
-                                  <i className="fas fa-star text-warning"></i>
-                                  <i className="fas fa-star-half text-warning"></i>
-                                </span>
-                              </span>
-                              <span className="text-warning">4.5</span>
-                              <span className="fs-6 ms-2">(9,300)</span>
-                            </div>
-                          </div>
-                          {/* Card Footer */}
-                          <div className="card-footer">
-                            <div className="row align-items-center g-0">
-                              <div className="col">
-                                <h5 className="mb-0">$39.00</h5>
-                              </div>
-                              <div className="col-auto">
-                                <a
-                                  href="#"
-                                  className="text-inherit text-decoration-none btn btn-primary"
-                                >
-                                  <i className="fas fa-shopping-cart text-primary align-middle me-2 text-white" />
-                                  Enroll Now
+                                  Зарегистрироваться
                                 </a>
                               </div>
                             </div>

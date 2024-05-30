@@ -33,7 +33,7 @@ function Header() {
                 href="profile-edit.html"
                 className="btn btn-primary btn-sm d-none d-md-block"
               >
-                Account Setting <i className="fas fa-gear fa-spin"></i>
+                Настройка учетной записи <i className="fas fa-gear fa-spin"></i>
               </a>
             </div>
           </div>
