@@ -58,15 +58,15 @@ function Courses() {
               <div className="row mb-4">
                 <h4 className="mb-0 mb-2 mt-4">
                   {" "}
-                  <i className="bi bi-grid-fill"></i> Courses
+                  <i className="bi bi-grid-fill"></i> Курсы
                 </h4>
               </div>
               <div className="card mb-4">
                 <div className="card-header">
-                  <h3 className="mb-0">Courses</h3>
+                  <h3 className="mb-0">Курсы</h3>
                   <span>
-                    Manage your courses from here, earch, view, edit or delete
-                    courses.
+                  Управляйте своими курсами отсюда, просматривайте, редактируйте или удаляйте их.
+                    курсы.
                   </span>
                 </div>
                 <div className="card-body">
@@ -75,7 +75,7 @@ function Courses() {
                       <input
                         type="search"
                         className="form-control"
-                        placeholder="Search Your Courses"
+                        placeholder="Поиск курсов"
                         onChange={handleSearch}
                       />
                     </div>
@@ -85,12 +85,12 @@ function Courses() {
                   <table className="table mb-0 text-nowrap table-hover table-centered text-nowrap">
                     <thead className="table-light">
                       <tr>
-                        <th>Courses</th>
-                        <th>Enrolled</th>
-                        <th>Level</th>
-                        <th>Status</th>
-                        <th>Date Created</th>
-                        <th>Action</th>
+                        <th>Курсы</th>
+                        <th>Записано</th>
+                        <th>Уровень</th>
+                        <th>Статус</th>
+                        <th>Дата создания</th>
+                        <th>Действие</th>
                         <th />
                       </tr>
                     </thead>
@@ -154,7 +154,7 @@ function Courses() {
                           </td>
                           <td>
                             <p className="mt-3 badge bg-warning text-dark">
-                              Intermediate
+                              Средний
                             </p>
                           </td>
                           <td>

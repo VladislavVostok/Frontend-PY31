@@ -17,7 +17,7 @@ import apiInstance from "../../utils/axios";
 function CourseDetail() {
   const [course, setCourse] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [addToCartBtn, setAddToCartBtn] = useState("Add To Cart");
+  const [addToCartBtn, setAddToCartBtn] = useState("Добавить в корзину");
   const [cartCount, setCartCount] = useContext(CartContext);
 
   const param = useParams();
@@ -39,7 +39,7 @@ function CourseDetail() {
   }, []);
 
   const addToCart = async (courseId, userId, price, country, cartId) => {
-    setAddToCartBtn("Adding To Cart");
+    setAddToCartBtn("Добавление в корзину");
     const formdata = new FormData();
 
     formdata.append("course_id", courseId);
@@ -53,9 +53,9 @@ function CourseDetail() {
         .post(`course/cart/`, formdata)
         .then((res) => {
           console.log(res.data);
-          setAddToCartBtn("Added To Cart");
+          setAddToCartBtn("Добавлено в корзину");
           Toast().fire({
-            title: "Added To Cart",
+            title: "Добавлено в корзину",
             icon: "success",
           });
 
@@ -66,7 +66,7 @@ function CourseDetail() {
         });
     } catch (error) {
       console.log(error);
-      setAddToCartBtn("Add To Cart");
+      setAddToCartBtn("Добавить в корзину");
     }
   };
 
@@ -77,7 +77,7 @@ function CourseDetail() {
       <>
         {isLoading === true ? (
           <p>
-            Loading <i className="fas fa-spinner fa-spin"></i>
+            Загрузка <i className="fas fa-spinner fa-spin"></i>
           </p>
         ) : (
           <>
@@ -105,7 +105,7 @@ function CourseDetail() {
                       </li>
                       <li className="list-inline-item h6 me-3 mb-1 mb-sm-0">
                         <i className="fas fa-user-graduate text-orange me-2" />
-                        {course.students?.length} Enrolled
+                        {course.students?.length} Зарегистрировано
                       </li>
                       <li className="list-inline-item h6 me-3 mb-1 mb-sm-0">
                         <i className="fas fa-signal text-success me-2" />

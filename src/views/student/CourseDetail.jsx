@@ -130,7 +130,7 @@ function CourseDetail() {
           handleNoteClose();
           Toast().fire({
             icon: "success",
-            title: "Note created",
+            title: "Заметка создана",
           });
         });
     } catch (error) {
@@ -156,7 +156,7 @@ function CourseDetail() {
         fetchCourseDetail();
         Toast().fire({
           icon: "success",
-          title: "Note updated",
+          title: "Заметка обновлена",
         });
       });
   };
@@ -170,7 +170,7 @@ function CourseDetail() {
         fetchCourseDetail();
         Toast().fire({
           icon: "success",
-          title: "Note deleted",
+          title: "Заметка удалена",
         });
       });
   };
@@ -201,7 +201,7 @@ function CourseDetail() {
         handleQuestionClose();
         Toast().fire({
           icon: "success",
-          title: "Question sent",
+          title: "Вопрос отправлен",
         });
       });
   };
@@ -262,7 +262,7 @@ function CourseDetail() {
         fetchCourseDetail();
         Toast().fire({
           icon: "success",
-          title: "Review created",
+          title: "Отзыв создан",
         });
       });
   };
@@ -286,7 +286,7 @@ function CourseDetail() {
         fetchCourseDetail();
         Toast().fire({
           icon: "success",
-          title: "Review updated",
+          title: "Отзыв обновлен",
         });
       });
   };
@@ -336,7 +336,7 @@ function CourseDetail() {
                                 aria-controls="course-pills-1"
                                 aria-selected="true"
                               >
-                                Course Lectures
+                                Лекции курса
                               </button>
                             </li>
                             {/* Tab item */}
@@ -354,7 +354,7 @@ function CourseDetail() {
                                 aria-controls="course-pills-2"
                                 aria-selected="false"
                               >
-                                Notes
+                                Заметки
                               </button>
                             </li>
                             {/* Tab item */}
@@ -372,7 +372,7 @@ function CourseDetail() {
                                 aria-controls="course-pills-3"
                                 aria-selected="false"
                               >
-                                Discussion
+                                Обсуждение
                               </button>
                             </li>
 
@@ -390,7 +390,7 @@ function CourseDetail() {
                                 aria-controls="course-pills-4"
                                 aria-selected="false"
                               >
-                                Leave a Review
+                                Оставить отзыв
                               </button>
                             </li>
                           </ul>
@@ -446,7 +446,7 @@ function CourseDetail() {
                                       >
                                         {c.title}
                                         <span className="small ms-0 ms-sm-2">
-                                          ({c.variant_items?.length} Lecture
+                                          ({c.variant_items?.length} Лекция
                                           {c.variant_items?.length > 1 && "s"})
                                         </span>
                                       </button>
@@ -517,7 +517,7 @@ function CourseDetail() {
                               <div className="card">
                                 <div className="card-header border-bottom p-0 pb-3">
                                   <div className="d-sm-flex justify-content-between align-items-center">
-                                    <h4 className="mb-0 p-3">All Notes</h4>
+                                    <h4 className="mb-0 p-3">Все заметки</h4>
                                     {/* Add Note Modal */}
                                     <button
                                       type="button"
@@ -525,7 +525,7 @@ function CourseDetail() {
                                       data-bs-toggle="modal"
                                       data-bs-target="#exampleModal"
                                     >
-                                      Add Note <i className="fas fa-pen"></i>
+                                      Добавить заметку <i className="fas fa-pen"></i>
                                     </button>
                                     <div
                                       className="modal fade"
@@ -541,7 +541,7 @@ function CourseDetail() {
                                               className="modal-title"
                                               id="exampleModalLabel"
                                             >
-                                              Add New Note{" "}
+                                              Добавить новую заметку{" "}
                                               <i className="fas fa-pen"></i>
                                             </h5>
                                             <button
@@ -560,7 +560,7 @@ function CourseDetail() {
                                                   htmlFor="exampleInputEmail1"
                                                   className="form-label"
                                                 >
-                                                  Note Title
+                                                  Название заметки
                                                 </label>
                                                 <input
                                                   type="text"
@@ -574,7 +574,7 @@ function CourseDetail() {
                                                   htmlFor="exampleInputPassword1"
                                                   className="form-label"
                                                 >
-                                                  Note Content
+                                                  Содержание заметки
                                                 </label>
                                                 <textarea
                                                   className="form-control"
@@ -591,13 +591,13 @@ function CourseDetail() {
                                                 data-bs-dismiss="modal"
                                               >
                                                 <i className="fas fa-arrow-left"></i>{" "}
-                                                Close
+                                                Закрыть
                                               </button>
                                               <button
                                                 type="submit"
                                                 className="btn btn-primary"
                                               >
-                                                Save Note{" "}
+                                                Сохранить заметку{" "}
                                                 <i className="fas fa-check-circle"></i>
                                               </button>
                                             </form>
@@ -621,7 +621,7 @@ function CourseDetail() {
                                             className="btn btn-success mb-0"
                                           >
                                             <i className="bi bi-pencil-square me-2" />{" "}
-                                            Edit
+                                            Редактировать
                                           </a>
                                           <a
                                             onClick={() =>
@@ -630,7 +630,7 @@ function CourseDetail() {
                                             className="btn btn-danger mb-0"
                                           >
                                             <i className="bi bi-trash me-2" />{" "}
-                                            Delete
+                                            Удалить
                                           </a>
                                         </div>
                                       </div>
@@ -662,7 +662,7 @@ function CourseDetail() {
                                         <input
                                           className="form-control pe-5 bg-transparent"
                                           type="search"
-                                          placeholder="Search"
+                                          placeholder="Поиск"
                                           aria-label="Search"
                                           onChange={handleSearchQuestion}
                                         />
@@ -681,7 +681,7 @@ function CourseDetail() {
                                         data-bs-toggle="modal"
                                         data-bs-target="#modalCreatePost"
                                       >
-                                        Ask Question
+                                        Задать вопрос
                                       </a>
                                     </div>
                                   </form>
@@ -734,7 +734,7 @@ function CourseDetail() {
                                             handleConversationShow(q)
                                           }
                                         >
-                                          Join Conversation{" "}
+                                          Присоединиться к беседе{" "}
                                           <i className="fas fa-arrow-right"></i>
                                         </button>
                                       </div>
@@ -795,7 +795,7 @@ function CourseDetail() {
                                           <textarea
                                             className="form-control"
                                             id="exampleFormControlTextarea1"
-                                            placeholder="Your review"
+                                            placeholder="Ваш отзыв"
                                             rows={3}
                                             onChange={handleReviewChange}
                                             name="review"
@@ -811,7 +811,7 @@ function CourseDetail() {
                                             type="submit"
                                             className="btn btn-primary mb-0"
                                           >
-                                            Post Review
+                                            Оставить отзыв
                                           </button>
                                         </div>
                                       </form>
@@ -853,7 +853,7 @@ function CourseDetail() {
                                           <textarea
                                             className="form-control"
                                             id="exampleFormControlTextarea1"
-                                            placeholder="Your review"
+                                            placeholder="Ваш отзыв"
                                             rows={3}
                                             onChange={handleReviewChange}
                                             name="review"
@@ -866,7 +866,7 @@ function CourseDetail() {
                                             type="submit"
                                             className="btn btn-primary mb-0"
                                           >
-                                            Update Review
+                                            Обновить отзыв
                                           </button>
                                         </div>
                                       </form>
@@ -890,7 +890,7 @@ function CourseDetail() {
       {/* Lecture Modal */}
       <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Lesson: {variantItem?.title}</Modal.Title>
+          <Modal.Title>Урок: {variantItem?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <ReactPlayer
@@ -902,7 +902,7 @@ function CourseDetail() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Закрыть
           </Button>
         </Modal.Footer>
       </Modal>
@@ -910,13 +910,13 @@ function CourseDetail() {
       {/* Note Edit Modal */}
       <Modal show={noteShow} size="lg" onHide={handleNoteClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Note: {selectedNote?.title}</Modal.Title>
+          <Modal.Title>Заметка: {selectedNote?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={(e) => handleSubmitEditNote(e, selectedNote?.id)}>
             <div className="mb-3">
               <label htmlFor="exampleInputEmail1" className="form-label">
-                Note Title
+                Название заметки
               </label>
               <input
                 defaultValue={selectedNote?.title}
@@ -928,7 +928,7 @@ function CourseDetail() {
             </div>
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">
-                Note Content
+                Содержание заметки
               </label>
               <textarea
                 defaultValue={selectedNote?.note}
@@ -944,10 +944,10 @@ function CourseDetail() {
               className="btn btn-secondary me-2"
               onClick={handleNoteClose}
             >
-              <i className="fas fa-arrow-left"></i> Close
+              <i className="fas fa-arrow-left"></i> Закрыть
             </button>
             <button type="submit" className="btn btn-primary">
-              Save Note <i className="fas fa-check-circle"></i>
+              Сохранить заметку <i className="fas fa-check-circle"></i>
             </button>
           </form>
         </Modal.Body>
@@ -956,7 +956,7 @@ function CourseDetail() {
       {/* Conversation Modal */}
       <Modal show={ConversationShow} size="lg" onHide={handleConversationClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Lesson: {selectedConversation?.title}</Modal.Title>
+          <Modal.Title>Урок: {selectedConversation?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="border p-2 p-sm-4 rounded-3">
@@ -1023,10 +1023,10 @@ function CourseDetail() {
                 id="autoheighttextarea"
                 rows="2"
                 onChange={handleMessageChange}
-                placeholder="What's your question?"
+                placeholder="Ваш вопрос?"
               ></textarea>
               <button class="btn btn-primary ms-2 mb-0 w-25" type="submit">
-                Post <i className="fas fa-paper-plane"></i>
+                Отправить <i className="fas fa-paper-plane"></i>
               </button>
             </form>
 
@@ -1056,13 +1056,13 @@ function CourseDetail() {
       {/* Note Edit Modal */}
       <Modal show={addQuestionShow} size="lg" onHide={handleQuestionClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Ask Question</Modal.Title>
+          <Modal.Title>Задать вопрос</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={handleSaveQuestion}>
             <div className="mb-3">
               <label htmlFor="exampleInputEmail1" className="form-label">
-                Question Title
+                Название вопроса
               </label>
               <input
                 value={createMessage.title}
@@ -1074,7 +1074,7 @@ function CourseDetail() {
             </div>
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">
-                Question Message
+                Сообщение вопроса
               </label>
               <textarea
                 value={createMessage.message}
@@ -1090,10 +1090,10 @@ function CourseDetail() {
               className="btn btn-secondary me-2"
               onClick={handleQuestionClose}
             >
-              <i className="fas fa-arrow-left"></i> Close
+              <i className="fas fa-arrow-left"></i> Закрыть
             </button>
             <button type="submit" className="btn btn-primary">
-              Send Message <i className="fas fa-check-circle"></i>
+              Отправить сообщение <i className="fas fa-check-circle"></i>
             </button>
           </form>
         </Modal.Body>

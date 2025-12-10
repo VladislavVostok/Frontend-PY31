@@ -186,7 +186,7 @@ function CourseCreate() {
     console.log(response.data);
     Swal.fire({
       icon: "success",
-      title: "Course Created Successfully"
+      title: "Курс успешно создан"
     })
   };
 
@@ -210,9 +210,9 @@ function CourseCreate() {
                         <div className="d-lg-flex align-items-center justify-content-between">
                           {/* Content */}
                           <div className="mb-4 mb-lg-0">
-                            <h1 className="text-white mb-1">Add New Course</h1>
+                            <h1 className="text-white mb-1">Добавить новый курс</h1>
                             <p className="mb-0 text-white lead">
-                              Just fill the form and create your courses.
+                              Просто заполните форму и создайте свои курсы.
                             </p>
                           </div>
                           <div>
@@ -222,14 +222,14 @@ function CourseCreate() {
                               style={{ backgroundColor: "white" }}
                             >
                               {" "}
-                              <i className="fas fa-arrow-left"></i> Back to
-                              Course
+                              <i className="fas fa-arrow-left"></i> Назад к
+                              курсам
                             </Link>
                             <a
                               href="instructor-courses.html"
                               className="btn btn-dark ms-2"
                             >
-                              Save <i className="fas fa-check-circle"></i>
+                              Сохранить <i className="fas fa-check-circle"></i>
                             </a>
                           </div>
                         </div>
@@ -241,11 +241,11 @@ function CourseCreate() {
                   <div className="card mb-3">
                     {/* Basic Info Section */}
                     <div className="card-header border-bottom px-4 py-3">
-                      <h4 className="mb-0">Basic Information</h4>
+                      <h4 className="mb-0">Основная информация</h4>
                     </div>
                     <div className="card-body">
                       <label htmlFor="courseTHumbnail" className="form-label">
-                        Thumbnail Preview
+                        Предварительный просмотр миниатюры
                       </label>
                       <img
                         style={{
@@ -263,7 +263,7 @@ function CourseCreate() {
                       />
                       <div className="mb-3">
                         <label htmlFor="courseTHumbnail" className="form-label">
-                          Course Thumbnail
+                          Миниатюра курса
                         </label>
                         <input
                           id="courseTHumbnail"
@@ -275,7 +275,7 @@ function CourseCreate() {
                       </div>
                       <div className="mb-3">
                         <label htmlFor="courseTitle" className="form-label">
-                          Intro Video
+                          Вводное видео
                         </label>
                         <input
                           id="introvideo"
@@ -287,7 +287,7 @@ function CourseCreate() {
                       </div>
                       <div className="mb-3">
                         <label htmlFor="courseTitle" className="form-label">
-                          Title
+                          Заголовок
                         </label>
                         <input
                           id="courseTitle"
@@ -297,10 +297,10 @@ function CourseCreate() {
                           name="title"
                           onChange={handleCourseInputChange}
                         />
-                        <small>Write a 60 character course title.</small>
+                        <small>Напишите название курса из 60 символов.</small>
                       </div>
                       <div className="mb-3">
-                        <label className="form-label">Courses category</label>
+                        <label className="form-label">Категория курсов</label>
                         <select
                           className="form-select"
                           name="category"
@@ -314,8 +314,8 @@ function CourseCreate() {
                           ))}
                         </select>
                         <small>
-                          Help people find your courses by choosing categories
-                          that represent your course.
+                          Помогите людям найти ваши курсы, выбрав категории,
+                          которые представляют ваш курс.
                         </small>
                       </div>
                       <div className="mb-3">
@@ -324,10 +324,10 @@ function CourseCreate() {
                           onChange={handleCourseInputChange}
                           name="level"
                         >
-                          <option value="">Select level</option>
-                          <option value="Beginner">Beginner</option>
-                          <option value="Intemediate">Intemediate</option>
-                          <option value="Advanced">Advanced</option>
+                          <option value="">Выберите уровень</option>
+                          <option value="Beginner">Начальный</option>
+                          <option value="Intemediate">Средний</option>
+                          <option value="Advanced">Продвинутый</option>
                         </select>
                       </div>
 
@@ -337,14 +337,14 @@ function CourseCreate() {
                           onChange={handleCourseInputChange}
                           name="language"
                         >
-                          <option value="">Select Language</option>
-                          <option value="English">English</option>
-                          <option value="Spanish">Spanish</option>
-                          <option value="French">French</option>
+                          <option value="">Выберите язык</option>
+                          <option value="English">Английский</option>
+                          <option value="Spanish">Испанский</option>
+                          <option value="French">Французский</option>
                         </select>
                       </div>
                       <div className="mb-3">
-                        <label className="form-label">Course Description</label>
+                        <label className="form-label">Описание курса</label>
                         <CKEditor
                           editor={ClassicEditor}
                           data={ckEdtitorData}
@@ -353,10 +353,10 @@ function CourseCreate() {
                           name="description"
                           value={course.description || ""}
                         />
-                        <small>A brief summary of your courses.</small>
+                        <small>Краткое описание ваших курсов.</small>
                       </div>
                       <label htmlFor="courseTitle" className="form-label">
-                        Price
+                        Цена
                       </label>
                       <input
                         id="courseTitle"
@@ -370,7 +370,7 @@ function CourseCreate() {
 
                     {/* Curriculum Section */}
                     <div className="card-header border-bottom px-4 py-3">
-                      <h4 className="mb-0">Curriculum</h4>
+                      <h4 className="mb-0">Учебный план</h4>
                     </div>
                     <div className="card-body ">
                       {variants.map((variant, variantIndex) => (
@@ -381,7 +381,7 @@ function CourseCreate() {
                           <div className="d-flex mb-4">
                             <input
                               type="text"
-                              placeholder="Section Name"
+                              placeholder="Название раздела"
                               required
                               className="form-control"
                               onChange={(e) =>
@@ -407,7 +407,7 @@ function CourseCreate() {
                             >
                               <input
                                 type="text"
-                                placeholder="Lesson Title"
+                                placeholder="Название урока"
                                 className="form-control me-1 mt-2"
                                 name="title"
                                 onChange={(e) =>
@@ -425,7 +425,7 @@ function CourseCreate() {
                                 id=""
                                 cols="30"
                                 className="form-control mt-2"
-                                placeholder="Lesson Description"
+                                placeholder="Описание урока"
                                 rows="4"
                                 onChange={(e) =>
                                   handleItemChange(
@@ -457,7 +457,7 @@ function CourseCreate() {
                                 </div>
                                 <div className="col-lg-4">
                                   <label htmlFor={`checkbox${1}`}>
-                                    Preview
+                                    Предварительный просмотр
                                   </label>
                                   <input
                                     type="checkbox"
@@ -483,7 +483,7 @@ function CourseCreate() {
                                   removeItem(variantIndex, itemIndex)
                                 }
                               >
-                                Delete Lesson <i className="fas fa-trash"></i>
+                                Удалить урок <i className="fas fa-trash"></i>
                               </button>
                             </div>
                           ))}
@@ -493,7 +493,7 @@ function CourseCreate() {
                             type="button"
                             onClick={() => addItem(variantIndex)}
                           >
-                            + Add Lesson
+                            + Добавить урок
                           </button>
                         </div>
                       ))}
@@ -503,7 +503,7 @@ function CourseCreate() {
                         type="button"
                         onClick={addVariant}
                       >
-                        + New Section
+                        + Новый раздел
                       </button>
                     </div>
                   </div>
@@ -511,7 +511,7 @@ function CourseCreate() {
                     className="btn btn-lg btn-success w-100 mt-2"
                     type="submit"
                   >
-                    Create Course <i className="fas fa-check-circle"></i>
+                    Создать курс <i className="fas fa-check-circle"></i>
                   </button>
                 </section>
               </>

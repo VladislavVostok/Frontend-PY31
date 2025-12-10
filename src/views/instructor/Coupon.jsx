@@ -69,7 +69,7 @@ function Coupon() {
         handleAddCouponClose();
         Toast().fire({
           icon: "success",
-          title: "Coupon created successfully",
+          title: "Купон успешно создан",
         });
       });
   };
@@ -82,7 +82,7 @@ function Coupon() {
         fetchCoupons();
         Toast().fire({
           icon: "success",
-          title: "Coupon deleted successfully",
+          title: "Купон успешно удален",
         });
       });
   };
@@ -107,7 +107,7 @@ function Coupon() {
         handleClose();
         Toast().fire({
           icon: "success",
-          title: "Coupon updated successfully",
+          title: "Купон успешно обновлен",
         });
       });
   };
@@ -129,14 +129,14 @@ function Coupon() {
                 {/* Card header */}
                 <div className="card-header d-lg-flex align-items-center justify-content-between">
                   <div className="mb-3 mb-lg-0">
-                    <h3 className="mb-0">Coupons</h3>
-                    <span>Manage all your coupons from here</span>
+                    <h3 className="mb-0">Купоны</h3>
+                    <span>Управляйте всеми своими купонами здесь</span>
                   </div>
                   <button
                     className="btn btn-primary"
                     onClick={handleAddCouponShow}
                   >
-                    Add Coupon
+                    Добавить купон
                   </button>
                 </div>
                 {/* Card body */}
@@ -150,22 +150,22 @@ function Coupon() {
                           <div className="ms-3 mt-2">
                             <div className="d-flex align-items-center justify-content-between">
                               <div>
-                                <h4 className="mb-0">{c.code}</h4>
-                                <span>{c.used_by} Student</span>
+                                <h4>{c.code}</h4>
+                                <span>{c.used_by} Студент</span>
                               </div>
                             </div>
                             <div className="mt-2">
                               <p className="mt-2">
                                 <span className="me-2 fw-bold">
-                                  Discount:{" "}
+                                  Скидка:{" "}
                                   <span className="fw-light">
-                                    {c.discount}% Discount
+                                    {c.discount}% Скидка
                                   </span>
                                 </span>
                               </p>
                               <p className="mt-1">
                                 <span className="me-2 fw-bold">
-                                  Date Created:{" "}
+                                  Дата создания:{" "}
                                   <span className="fw-light">
                                     {moment(c.date).format("DD MMM, YYYY")}
                                   </span>
@@ -177,7 +177,7 @@ function Coupon() {
                                   type="button"
                                   onClick={() => handleShow(c)}
                                 >
-                                  Update Coupon
+                                  Обновить купон
                                 </button>
 
                                 <button
@@ -204,7 +204,7 @@ function Coupon() {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
-            Update Coupon -{" "}
+            Обновить купон -{" "}
             <span className="fw-bold">{selectedCoupon.code}</span>
           </Modal.Title>
         </Modal.Header>
@@ -212,22 +212,22 @@ function Coupon() {
           <form onSubmit={handleCouponUpdateSubmit}>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">
-                Code
+                Код
               </label>
               <input
                 type="text"
-                placeholder="Code"
+                placeholder="Код"
                 defaultValue={selectedCoupon.code}
                 className="form-control"
                 name="code"
                 onChange={handleCreateCouponChange}
               />
               <label for="exampleInputEmail1" class="form-label mt-3">
-                Discount
+                Скидка
               </label>
               <input
                 type="text"
-                placeholder="Discount"
+                placeholder="Скидка"
                 defaultValue={selectedCoupon.discount}
                 className="form-control"
                 name="discount"
@@ -237,11 +237,11 @@ function Coupon() {
             </div>
 
             <button type="submit" class="btn btn-primary">
-              Update Coupon <i className="fas fa-check-circle"> </i>
+              Обновить купон <i className="fas fa-check-circle"> </i>
             </button>
 
             <Button className="ms-2" variant="secondary" onClick={handleClose}>
-              Close
+              Закрыть
             </Button>
           </form>
         </Modal.Body>
@@ -249,28 +249,28 @@ function Coupon() {
 
       <Modal show={showAddCoupon} onHide={handleAddCouponClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Create New Coupon</Modal.Title>
+          <Modal.Title>Создать новый купон</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={handleCouponSubmit}>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">
-                Code
+                Код
               </label>
               <input
                 type="text"
-                placeholder="Code"
+                placeholder="Код"
                 value={createCoupon.code}
                 className="form-control"
                 name="code"
                 onChange={handleCreateCouponChange}
               />
               <label for="exampleInputEmail1" class="form-label mt-3">
-                Discount
+                Скидка
               </label>
               <input
                 type="text"
-                placeholder="Discount"
+                placeholder="Скидка"
                 value={createCoupon.discount}
                 className="form-control"
                 name="discount"
@@ -280,7 +280,7 @@ function Coupon() {
             </div>
 
             <button type="submit" class="btn btn-primary">
-              Create Coupon <i className="fas fa-plus"> </i>
+              Создать купон <i className="fas fa-plus"> </i>
             </button>
 
             <Button
@@ -288,7 +288,7 @@ function Coupon() {
               variant="secondary"
               onClick={handleAddCouponClose}
             >
-              Close
+              Закрыть
             </Button>
           </form>
         </Modal.Body>

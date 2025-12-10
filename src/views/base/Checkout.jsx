@@ -47,7 +47,7 @@ function Checkout() {
       if (error.response.data.includes("Coupon matching query does not exi")) {
         Toast().fire({
           icon: "error",
-          title: "Coupon does not exist",
+          title: "Купон не существует",
         });
       }
     }
@@ -77,7 +77,7 @@ function Checkout() {
           <div className="row">
             <div className="col-12">
               <div className="bg-light p-4 text-center rounded-3">
-                <h1 className="m-0">Проверка</h1>
+                <h1 className="m-0">Оформление заказа</h1>
                 {/* Breadcrumb */}
                 <div className="d-flex justify-content-center">
                   <nav aria-label="breadcrumb">
@@ -121,7 +121,7 @@ function Checkout() {
               >
                 <div>
                   <i className="bi bi-exclamation-octagon-fill me-2" />
-                  Ознакомьтесь с вашими курсами перед оплатой
+                  Проверьте свои курсы перед оплатой
                 </div>
 
                 <button
@@ -135,7 +135,7 @@ function Checkout() {
               </div>
 
               <div className="p-4 shadow rounded-3 mt-4">
-                <h5 className="mb-0 mb-3">Courses</h5>
+                <h5 className="mb-0 mb-3">Курсы</h5>
 
                 <div className="table-responsive border-0 rounded-3">
                   <table className="table align-middle p-4 mb-0">
@@ -180,7 +180,7 @@ function Checkout() {
               </div>
 
               <div className="shadow p-4 rounded-3 mt-5">
-                <h5 className="mb-0">Personal Details</h5>
+                <h5 className="mb-0">Личные данные</h5>
                 <form className="row g-3 mt-0">
                   <div className="col-md-12 bg-light-input">
                     <label htmlFor="yourName" className="form-label">
@@ -190,7 +190,7 @@ function Checkout() {
                       type="text"
                       className="form-control bg-light"
                       id="yourName"
-                      placeholder="Name"
+                      placeholder="Имя"
                       readOnly
                       value={order.full_name}
                     />
@@ -203,7 +203,7 @@ function Checkout() {
                       type="email"
                       className="form-control bg-light"
                       id="emailInput"
-                      placeholder="Email"
+                      placeholder="Почта"
                       readOnly
                       value={order.email}
                     />
@@ -218,7 +218,7 @@ function Checkout() {
                       type="text"
                       className="form-control bg-light"
                       id="mobileNumber"
-                      placeholder="Country"
+                      placeholder="Страна"
                       readOnly
                       value={order.country}
                     />
@@ -231,10 +231,10 @@ function Checkout() {
               <div className="row mb-0">
                 <div className="col-md-6 col-xl-12">
                   <div className="shadow p-4 mb-4 rounded-3">
-                    <h4 className="mb-4">Краткое описание заказа</h4>
+                    <h4 className="mb-4">Сводка заказа</h4>
                     <div className="mb-4">
                       <div className="d-flex justify-content-between align-items-center">
-                        <span>Идентификатор транзакции</span>
+                        <span>ID транзакции</span>
                         <p className="mb-0 h6 fw-light">DES23853</p>
                       </div>
                     </div>
@@ -242,7 +242,7 @@ function Checkout() {
                     <div className="input-group mt-1">
                       <input
                         className="form-control form-control"
-                        placeholder="COUPON CODE"
+                        placeholder="КОД КУПОНА"
                         onChange={(e) => setCoupon(e.target.value)}
                       />
                       <button
@@ -255,7 +255,7 @@ function Checkout() {
                     </div>
 
                     <div className="p-3 shadow rounded-3 mt-3">
-                      <h4 className="mb-3">Cart Total</h4>
+                      <h4 className="mb-3">Итог корзины</h4>
                       <ul class="list-group mb-3">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                         Подытог
@@ -270,7 +270,7 @@ function Checkout() {
                           <span>${order.tax_fee}</span>
                         </li>
                         <li class="list-group-item d-flex fw-bold justify-content-between align-items-center">
-                        Весь
+                        Всего
                           <span className="fw-bold">${order.total}</span>
                         </li>
                       </ul>
@@ -287,7 +287,7 @@ function Checkout() {
                               className="btn btn-lg btn-success mt-2 w-100"
                             >
                               {" "}
-                              Processing{" "}
+                              Обработка{" "}
                               <i className="fas fa-spinner f a-spin"></i>
                             </button>
                           ) : (
@@ -297,7 +297,7 @@ function Checkout() {
                               className="btn btn-lg btn-success mt-2 w-100"
                             >
                               {" "}
-                              Оплата с помощью Stripe
+                              Оплатить через Stripe
                             </button>
                           )}
                         </form>

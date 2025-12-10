@@ -55,7 +55,7 @@ function Index() {
         .then((res) => {
           console.log(res.data);
           Toast().fire({
-            title: "Added To Cart",
+            title: "Добавлено в корзину",
             icon: "success",
           });
 
@@ -268,7 +268,7 @@ function Index() {
                         <small>{c.teacher.full_name}</small> <br />
                         <small>
                           {c.students?.length} Студент
-                          {c.students?.length > 1 && "s"}
+                          {c.students?.length > 1 && ""}
                         </small>{" "}
                         <br />
                         <div className="lh-1 mt-3 d-flex">
@@ -279,7 +279,7 @@ function Index() {
                           </span>
                           <span className="text-warning">4.5</span>
                           <span className="fs-6 ms-2">
-                            ({c.reviews?.length} Отзывы)
+                            ({c.reviews?.length} Отзывов)
                           </span>
                         </div>
                       </div>

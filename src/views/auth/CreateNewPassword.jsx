@@ -22,7 +22,7 @@ function CreateNewPassword() {
     if (confirmPassword !== password) {
       Toast().fire({
         icon: "warning",
-        title: "Passwords does not match",
+        title: "Пароли не совпадают",
       });
       return;
     } else {

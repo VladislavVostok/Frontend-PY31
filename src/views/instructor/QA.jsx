@@ -93,14 +93,14 @@ function QA() {
             <div className="col-lg-9 col-md-8 col-12">
               <h4 className="mb-0 mb-1">
                 {" "}
-                <i className="fas fa-envelope"></i> Question and Answer
+                <i className="fas fa-envelope"></i> Вопросы и ответы
               </h4>
 
               <div className="card">
                 {/* Card header */}
                 <div className="card-header border-bottom p-0 pb-3">
                   {/* Title */}
-                  <h4 className="mb-3 p-3">Discussion</h4>
+                  <h4 className="mb-3 p-3">Обсуждение</h4>
                   <form className="row g-4 p-3">
                     {/* Search */}
                     <div className="col-sm-12 col-lg-12">
@@ -108,7 +108,7 @@ function QA() {
                         <input
                           className="form-control pe-5 bg-transparent"
                           type="search"
-                          placeholder="Search Questions"
+                          placeholder="Поиск вопросов"
                           aria-label="Search"
                           onChange={handleSearchQuestion}
                         />
@@ -162,7 +162,7 @@ function QA() {
                           className="btn btn-primary btn-sm mb-3 mt-3"
                           onClick={() => handleConversationShow(q)}
                         >
-                          Join Conversation{" "}
+                          Присоединиться к беседе{" "}
                           <i className="fas fa-arrow-right"></i>
                         </button>
                       </div>
@@ -179,7 +179,7 @@ function QA() {
 
       <Modal show={ConversationShow} size="lg" onHide={handleConversationClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Lesson: {selectedConversation?.title}</Modal.Title>
+          <Modal.Title>Урок: {selectedConversation?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="border p-2 p-sm-4 rounded-3">
@@ -246,10 +246,10 @@ function QA() {
                 id="autoheighttextarea"
                 rows="2"
                 onChange={handleMessageChange}
-                placeholder="What's your question?"
+                placeholder="Ваш вопрос?"
               ></textarea>
               <button class="btn btn-primary ms-2 mb-0 w-25" type="submit">
-                Post <i className="fas fa-paper-plane"></i>
+                Отправить <i className="fas fa-paper-plane"></i>
               </button>
             </form>
           </div>

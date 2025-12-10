@@ -43,7 +43,7 @@ function Review() {
           fetchReviewsData();
           Toast().fire({
             icon: "success",
-            title: "Reply sent.",
+            title: "Ответ отправлен.",
           });
           setReply("");
         });
@@ -104,9 +104,9 @@ function Review() {
                 {/* Card header */}
                 <div className="card-header d-lg-flex align-items-center justify-content-between">
                   <div className="mb-3 mb-lg-0">
-                    <h3 className="mb-0">Reviews</h3>
+                    <h3 className="mb-0">Отзывы</h3>
                     <span>
-                      You have full control to manage your own account setting.
+                      У вас есть полный контроль над управлением настройками вашей учетной записи.
                     </span>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ function Review() {
                       <input
                         type="text"
                         className="form-control"
-                        placeholder="Search By Couse"
+                        placeholder="Поиск по курсу"
                         onChange={handleFilterByCourse}
                       />
                     </div>
@@ -128,7 +128,7 @@ function Review() {
                         className="form-select"
                         onChange={handleSortByRatingChange}
                       >
-                        <option value={0}>Rating</option>
+                        <option value={0}>Рейтинг</option>
                         <option value={1}>1</option>
                         <option value={2}>2</option>
                         <option value={3}>3</option>
@@ -142,9 +142,9 @@ function Review() {
                         className="form-select"
                         onChange={handleSortByDate}
                       >
-                        <option value="">Sort by</option>
-                        <option value="Newest">Newest</option>
-                        <option value="Oldest">Oldest</option>
+                        <option value="">Сортировать по</option>
+                        <option value="Newest">Новые</option>
+                        <option value="Oldest">Старые</option>
                       </select>
                     </div>
                   </form>
@@ -178,7 +178,7 @@ function Review() {
                                   href="#"
                                   data-bs-toggle="tooltip"
                                   data-placement="top"
-                                  title="Report Abuse"
+                                  title="Пожаловаться на нарушение"
                                 >
                                   <i className="fe fe-flag" />
                                 </a>
@@ -188,20 +188,20 @@ function Review() {
                               <span className="fs-6 me-1 align-top">
                                 <Rater total={5} rating={r.rating || 0} />
                               </span>
-                              <span className="me-1">for</span>
+                              <span className="me-1">для</span>
                               <span className="h5">{r.course?.title}</span>
                               <p className="mt-2">
                                 <span className="fw-bold me-2">
-                                  Review <i className="fas fa-arrow-right"></i>
+                                  Отзыв <i className="fas fa-arrow-right"></i>
                                 </span>
                                 {r.review}
                               </p>
                               <p className="mt-2">
                                 <span className="fw-bold me-2">
-                                  Response{" "}
+                                  Ответ{" "}
                                   <i className="fas fa-arrow-right"></i>
                                 </span>
-                                {r.reply || "No Reply"}
+                                {r.reply || "Нет ответа"}
                               </p>
                               <p>
                                 <button
@@ -212,7 +212,7 @@ function Review() {
                                   aria-expanded="false"
                                   aria-controls={`collapse${r.id}`}
                                 >
-                                  Send Response
+                                  Отправить ответ
                                 </button>
                               </p>
                               <div class="collapse" id={`collapse${r.id}`}>
@@ -223,7 +223,7 @@ function Review() {
                                         for="exampleInputEmail1"
                                         class="form-label"
                                       >
-                                        Write Response
+                                        Написать ответ
                                       </label>
                                       <textarea
                                         name=""
@@ -243,7 +243,7 @@ function Review() {
                                       class="btn btn-primary"
                                       onClick={() => handleSubmitReply(r.id)}
                                     >
-                                      Send Response{" "}
+                                      Отправить ответ{" "}
                                       <i className="fas fa-paper-plane"> </i>
                                     </button>
                                   </div>
@@ -256,7 +256,7 @@ function Review() {
                     ))}
 
                     {filteredReviews?.length < 1 && (
-                      <p className="mt-4 p-3">No reviews</p>
+                      <p className="mt-4 p-3">Нет отзывов</p>
                     )}
                   </ul>
                 </div>

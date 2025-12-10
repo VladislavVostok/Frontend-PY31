@@ -55,7 +55,7 @@ function Search() {
         .then((res) => {
           console.log(res.data);
           Toast().fire({
-            title: "Added To Cart",
+            title: "Добавлено в корзину",
             icon: "success",
           });
 
@@ -157,8 +157,8 @@ function Search() {
                         </h4>
                         <small>{c.teacher.full_name}</small> <br />
                         <small>
-                          {c.students?.length} Студент
-                          {c.students?.length > 1 && "s"}
+                          {c.students?.length} Студентов
+                          {c.students?.length > 1 && ""}
                         </small>{" "}
                         <br />
                         <div className="lh-1 mt-3 d-flex">
@@ -169,7 +169,7 @@ function Search() {
                           </span>
                           <span className="text-warning">4.5</span>
                           <span className="fs-6 ms-2">
-                            ({c.reviews?.length} Отзывы)
+                            ({c.reviews?.length} Отзывов)
                           </span>
                         </div>
                       </div>
@@ -199,7 +199,7 @@ function Search() {
                               to={""}
                               className="text-inherit text-decoration-none btn btn-primary"
                             >
-                              Записаться{" "}
+                              Записаться сейчас{" "}
                               <i className="fas fa-arrow-right text-primary align-middle me-2 text-white" />
                             </Link>
                           </div>
@@ -215,7 +215,7 @@ function Search() {
                   <li className="">
                     <button className="page-link me-1">
                       <i className="ci-arrow-left me-2" />
-                      Предыдущий
+                      Назад
                     </button>
                   </li>
                 </ul>
@@ -227,7 +227,7 @@ function Search() {
                 <ul className="pagination">
                   <li className={`totalPages`}>
                     <button className="page-link ms-1">
-                      Следующий
+                      Вперед
                       <i className="ci-arrow-right ms-3" />
                     </button>
                   </li>
@@ -272,12 +272,12 @@ function Search() {
             <div className="col-lg-5 col-12">
               <div className="text-white p-5 p-lg-0">
                 {/* text */}
-                <h2 className="h1 text-white">Станьте инструктором уже сегодня</h2>
+                <h2 className="h1 text-white">Станьте инструктором сегодня</h2>
                 <p className="mb-0">
-                Преподаватели со всего мира обучают миллионы студентов. Мы предоставляем инструменты и навыки, чтобы научить вас тому, чему вы любовь.
+                Преподаватели со всего мира обучают миллионы студентов. Мы предоставляем инструменты и навыки, чтобы научить вас тому, что вы любите.
                 </p>
                 <a href="#" className="btn bg-white text-dark fw-bold mt-4">
-                  Начните преподавать уже сегодня <i className="fas fa-arrow-right"></i>
+                  Начните преподавать сегодня <i className="fas fa-arrow-right"></i>
                 </a>
               </div>
             </div>

@@ -40,54 +40,1246 @@ function StudentCourseLectureDetail() {
                                                         {/* Tab item */}
                                                         <li className="nav-item me-2 me-sm-4" role="presentation">
                                                             <button className="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-1" type="button" role="tab" aria-controls="course-pills-1" aria-selected="true">
-                                                            Курс лекций
-                                                            </button>
-                                                        </li>
-                                                        {/* Tab item */}
-                                                        <li className="nav-item me-2 me-sm-4" role="presentation">
-                                                            <button
-                                                                className="nav-link mb-2 mb-md-0"
-                                                                id="course-pills-tab-2"
-                                                                data-bs-toggle="pill"
-                                                                data-bs-target="#course-pills-2"
-                                                                type="button"
-                                                                role="tab"
-                                                                aria-controls="course-pills-2"
-                                                                aria-selected="false"
-                                                            >
-                                                                Записи
-                                                            </button>
-                                                        </li>
-                                                        {/* Tab item */}
-                                                        <li className="nav-item me-2 me-sm-4" role="presentation">
-                                                            <button
-                                                                className="nav-link mb-2 mb-md-0"
-                                                                id="course-pills-tab-3"
-                                                                data-bs-toggle="pill"
-                                                                data-bs-target="#course-pills-3"
-                                                                type="button"
-                                                                role="tab"
-                                                                aria-controls="course-pills-3"
-                                                                aria-selected="false"
-                                                            >
-                                                                Обсуждение
-                                                            </button>
-                                                        </li>
+                                                            (3 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-1"
+                                                                        className="accordion-collapse collapse show"
+                                                                        aria-labelledby="heading-1"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                    Вступление
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">2m 10s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
 
-                                                        <li className="nav-item me-2 me-sm-4" role="presentation">
-                                                            <button
-                                                                className="nav-link mb-2 mb-md-0"
-                                                                id="course-pills-tab-4"
-                                                                data-bs-toggle="pill"
-                                                                data-bs-target="#course-pills-4"
-                                                                type="button"
-                                                                role="tab"
-                                                                aria-controls="course-pills-4"
-                                                                aria-selected="false"
-                                                            >
-                                                                Оставить отзыв
-                                                            </button>
-                                                        </li>
+                                                                                    Что такое цифровой маркетинг?
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">15м 10с</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-lock me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate text-muted ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Тип цифрового маркетинга
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">18м 10с</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                {/* Item */}
+                                                                <div className="accordion-item mb-3">
+                                                                    <h6 className="accordion-header font-base" id="heading-2">
+                                                                        <button
+                                                                            className="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                                            type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapse-2"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapse-2"
+                                                                        >
+                                                                            Жизненный цикл клиента
+                                                                            <span className="small ms-0 ms-sm-2">
+                                                                                (4 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-2"
+                                                                        className="accordion-collapse collapse"
+                                                                        aria-labelledby="heading-2"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        {/* Accordion body START */}
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Что такое цифровой маркетинг?
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">11м 20с</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                    15 советов по написанию магнитных заголовков
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">25m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                    Как писать так, как говорят Ваши клиенты
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">11m 30s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <div>
+                                                                                        <a
+                                                                                            href="#"
+                                                                                            className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#exampleModal"
+                                                                                        >
+                                                                                            <i className="fas fa-play me-0" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div className="row g-sm-0 align-items-center">
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-md-400px">
+                                                                                                Как превратить Функции в преимущества
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="badge text-bg-orange ms-2 ms-md-0">
+                                                                                                <i className="fas fa-lock fa-fw me-1" />
+                                                                                                Высший сорт
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p className="mb-0 d-inline-block text-truncate w-70px w-sm-60px">
+                                                                                    35м 30с
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        {/* Accordion body END */}
+                                                                    </div>
+                                                                </div>
+                                                                {/* Item */}
+                                                                <div className="accordion-item mb-3">
+                                                                    <h6 className="accordion-header font-base" id="heading-5">
+                                                                        <button
+                                                                            className="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                                            type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapse-5"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapse-5"
+                                                                        >
+                                                                            Что такое поисковая оптимизация (SEO)
+                                                                            <span className="small ms-0 ms-sm-2">
+                                                                                (10 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-5"
+                                                                        className="accordion-collapse collapse"
+                                                                        aria-labelledby="heading-5"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        {/* Accordion body START */}
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Введение
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">1m 10s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Обзор SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">11m 03s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Как SEO оптимизировать вашу домашнюю страницу
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">15m 00s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Как SEO оптимизировать вашу домашнюю страницу
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">15m 00s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Как писать заголовки, которые любят поисковые системы
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">25m 30s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Планирование ключевых слов для SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">18m 10s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        SEO для электронной коммерции
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">28m 10s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Внутренние и внешние ссылки
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">45m 10s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Мобильное SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">8m 10s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Внестраничное SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">18m 10s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Измерение эффективности SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">35m 10s</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        {/* Accordion body END */}
+                                                                    </div>
+                                                                </div>
+                                                                {/* Item */}
+                                                                <div className="accordion-item mb-3">
+                                                                    <h6 className="accordion-header font-base" id="heading-6">
+                                                                        <button
+                                                                            className="accordion-button fw-bold collapsed rounded d-block d-sm-flex d-inline-block"
+                                                                            type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapse-6"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapse-6"
+                                                                        >
+                                                                            Реклама в Facebook
+                                                                            <span className="small ms-0 ms-sm-2">
+                                                                                (3 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-6"
+                                                                        className="accordion-collapse collapse"
+                                                                        aria-labelledby="heading-6"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        {/* Accordion body START */}
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Введение
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">1m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Создание страниц Facebook
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">25m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Пользовательский URL страницы Facebook
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">11m 30s</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        {/* Accordion body END */}
+                                                                    </div>
+                                                                </div>
+                                                                {/* Item */}
+                                                                <div className="accordion-item mb-3">
+                                                                    <h6 className="accordion-header font-base" id="heading-7">
+                                                                        <button
+                                                                            className="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                                            type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapse-7"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapse-7"
+                                                                        >
+                                                                            Маркетинг на YouTube
+                                                                            <span className="small ms-0 ms-sm-2">
+                                                                                (5 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-7"
+                                                                        className="accordion-collapse collapse"
+                                                                        aria-labelledby="heading-7"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        {/* Accordion body START */}
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Поток видео
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">25m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Инструмент веб-мастера
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">15m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Рекомендуемый контент на канале
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">32m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <div>
+                                                                                        <a
+                                                                                            href="#"
+                                                                                            className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#exampleModal"
+                                                                                        >
+                                                                                            <i className="fas fa-play me-0" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div className="row g-sm-0 align-items-center">
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-md-400px">
+                                                                                                Управление комментариями
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="badge text-bg-orange ms-2 ms-md-0">
+                                                                                                <i className="fas fa-lock fa-fw me-1" />
+                                                                                                Премиум
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p className="mb-0 d-inline-block text-truncate w-70px w-sm-60px">
+                                                                                    20m 20s
+                                                                                </p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <div>
+                                                                                        <a
+                                                                                            href="#"
+                                                                                            className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#exampleModal"
+                                                                                        >
+                                                                                            <i className="fas fa-play me-0" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div className="row g-sm-0 align-items-center">
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-md-400px">
+                                                                                                Аналитика канала
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="badge text-bg-orange ms-2 ms-md-0">
+                                                                                                <i className="fas fa-lock fa-fw me-1" />
+                                                                                                Премиум
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p className="mb-0 d-inline-block text-truncate w-70px w-sm-60px">
+                                                                                    18m 20s
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        {/* Accordion body END */}
+                                                                    </div>
+                                                                </div>
+                                                                {/* Item */}
+                                                                <div className="accordion-item mb-3">
+                                                                    <h6 className="accordion-header font-base" id="heading-8">
+                                                                        <button
+                                                                            className="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                                            type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapse-8"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapse-8"
+                                                                        >
+                                                                            Почему SEO
+                                                                            <span className="small ms-0 ms-sm-2">
+                                                                                (8 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-8"
+                                                                        className="accordion-collapse collapse"
+                                                                        aria-labelledby="heading-8"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        {/* Accordion body START */}
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Понимание SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">20m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Внутристраничное SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">15m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Локальное SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">16m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Измерение эффективности SEO
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">12m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <div>
+                                                                                        <a
+                                                                                            href="#"
+                                                                                            className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#exampleModal"
+                                                                                        >
+                                                                                            <i className="fas fa-play me-0" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div className="row g-sm-0 align-items-center">
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-md-400px">
+                                                                                                Ключевые слова в блогах и статьях
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="badge text-bg-orange ms-2 ms-md-0">
+                                                                                                <i className="fas fa-lock fa-fw me-1" />
+                                                                                                Премиум
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p className="mb-0 d-inline-block text-truncate w-70px w-sm-60px">
+                                                                                    15m 20s
+                                                                                </p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <div>
+                                                                                        <a
+                                                                                            href="#"
+                                                                                            className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#exampleModal"
+                                                                                        >
+                                                                                            <i className="fas fa-play me-0" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div className="row g-sm-0 align-items-center">
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-md-400px">
+                                                                                                Планирование ключевых слов для SEO
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div className="col-sm-6">
+                                                                                            <span className="badge text-bg-orange ms-2 ms-md-0">
+                                                                                                <i className="fas fa-lock fa-fw me-1" />
+                                                                                                Премиум
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p className="mb-0 d-inline-block text-truncate w-70px w-sm-60px">
+                                                                                    36m 12s
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        {/* Accordion body END */}
+                                                                    </div>
+                                                                </div>
+                                                                {/* Item */}
+                                                                <div className="accordion-item mb-3">
+                                                                    <h6 className="accordion-header font-base" id="heading-9">
+                                                                        <button
+                                                                            className="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                                            type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapse-9"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapse-9"
+                                                                        >
+                                                                            Менеджер тегов Google
+                                                                            <span className="small ms-0 ms-sm-2">
+                                                                                (4 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-9"
+                                                                        className="accordion-collapse collapse"
+                                                                        aria-labelledby="heading-9"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        {/* Accordion body START */}
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Страницы G+ ранжируются выше
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">13m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Добавление контактных ссылок
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">7m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Google Hangouts
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">12m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+
+                                                                                        Google Local Business
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">7m 20s</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        {/* Accordion body END */}
+                                                                    </div>
+                                                                </div>
+                                                                {/* Item */}
+                                                                <div className="accordion-item mb-0">
+                                                                    <h6
+                                                                        className="accordion-header font-base"
+                                                                        id="heading-10"
+                                                                    >
+                                                                        <button
+                                                                            className="accordion-button fw-bold collapsed rounded d-sm-flex d-inline-block"
+                                                                            type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapse-10"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapse-10"
+                                                                        >
+                                                                            Интеграция с веб-сайтом
+                                                                            <span className="small ms-0 ms-sm-2">
+                                                                                (3 Лекции)
+                                                                            </span>
+                                                                        </button>
+                                                                    </h6>
+                                                                    <div
+                                                                        id="collapse-10"
+                                                                        className="accordion-collapse collapse"
+                                                                        aria-labelledby="heading-10"
+                                                                        data-bs-parent="#accordionExample2"
+                                                                    >
+                                                                        {/* Accordion body START */}
+                                                                        <div className="accordion-body mt-3">
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Создание аккаунта LinkedIn
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">13m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Расширенный поиск
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0">31m 20s</p>
+                                                                            </div>
+                                                                            <hr /> {/* Divider */}
+                                                                            {/* Course lecture */}
+                                                                            <div className="d-flex justify-content-between align-items-center">
+                                                                                <div className="position-relative d-flex align-items-center">
+                                                                                    <a
+                                                                                        href="#"
+                                                                                        className="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static"
+                                                                                    >
+                                                                                        <i className="fas fa-play me-0" />
+                                                                                    </a>
+                                                                                    <span className="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-100px w-sm-200px w-md-400px">
+                                                                                        Мобильное приложение LinkedIn
+                                                                                    </span>
+                                                                                </div>
+                                                                                <p className="mb-0 text-truncate">25m 20s</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        {/* Accordion body END */}
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            {/* Accordion END */}
+                                                        </div>
+
+                                                        <div
+                                                            className="tab-pane fade"
+                                                            id="course-pills-2"
+                                                            role="tabpanel"
+                                                            aria-labelledby="course-pills-tab-2"
+                                                        >
+                                                            <div className="card">
+                                                                <div className="card-header border-bottom p-0 pb-3">
+                                                                    <div className="d-sm-flex justify-content-between align-items-center">
+                                                                        <h4 className="mb-0 p-3">Все заметки</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="card-body p-0 pt-3">
+                                                                    {/* Note item start */}
+                                                                    <div className="row g-4 p-3">
+                                                                        <div className="col-sm-10 col-xl-11">
+                                                                            <h5> Что такое цифровой маркетинг Что такое цифровой маркетинг</h5>
+                                                                            <p>
+                                                                                Восхитительное расположение, он верил, что все его поддерживали.
+                                                                                Предполагая, что так и будет, завтрак или идеально.
+                                                                                Это вызвало у меня холм. Долина, о двадцать, направь меня
+                                                                                так. Отъезд дефектный, восхитительное расположение, он верил,
+                                                                                что все его поддерживали. Семейные месяцы длились
+                                                                                просто, установили природу вульгарной его. Картина для попытки радости
+                                                                                возбудила десять манер разговора. Семейные месяцы
+                                                                                длились просто, установили природу вульгарной его. Картина для
+                                                                                попытки радости возбудила десять манер разговора.
+                                                                            </p>
+                                                                            {/* Buttons */}
+                                                                            <div className="hstack gap-3 flex-wrap">
+                                                                                <a href="#" className="btn btn-success mb-0">
+                                                                                    <i className="bi bi-pencil-square me-2" /> Редактировать
+                                                                                </a>
+                                                                                <a href="#" className="btn btn-danger mb-0">
+                                                                                    <i className="bi bi-trash me-2" /> Удалить
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            className="tab-pane fade"
+                                                            id="course-pills-3"
+                                                            role="tabpanel"
+                                                            aria-labelledby="course-pills-tab-3"
+                                                        >
+                                                            <div className="card">
+                                                                {/* Card header */}
+                                                                <div className="card-header border-bottom p-0 pb-3">
+                                                                    {/* Title */}
+                                                                    <h4 className="mb-3 p-3">Обсуждение</h4>
+                                                                    <form className="row g-4 p-3">
+                                                                        {/* Search */}
+                                                                        <div className="col-sm-6 col-lg-9">
+                                                                            <div className="position-relative">
+                                                                                <input className="form-control pe-5 bg-transparent" type="search" placeholder="Поиск" aria-label="Search" />
+                                                                                <button className="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                                                                                    <i className="fas fa-search fs-6 " />
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="col-sm-6 col-lg-3">
+                                                                            <a
+                                                                                href="#"
+                                                                                className="btn btn-primary mb-0 w-100"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#modalCreatePost"
+                                                                            >
+                                                                                Задать вопрос
+                                                                            </a>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                {/* Card body */}
+                                                                <div className="card-body p-0 pt-3">
+                                                                    <div className="vstack gap-3 p-3">
+                                                                        {/* Question item START */}
+                                                                        <div className="shadow rounded-3 p-3">
+                                                                            <div className="d-sm-flex justify-content-sm-between mb-3">
+                                                                                <div className="d-flex align-items-center">
+                                                                                    <div className="avatar avatar-sm flex-shrink-0">
+                                                                                        <img
+                                                                                            src="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-3.jpg"
+                                                                                            className="avatar-img rounded-circle"
+                                                                                            alt="avatar"
+                                                                                            style={{ width: "60px", height: "60px", borderRadius: "50%", objectFit: "cover" }}
+                                                                                        />
+                                                                                    </div>
+                                                                                    <div className="ms-2">
+                                                                                        <h6 className="mb-0">
+                                                                                            <a href="#" className='text-decoration-none text-dark'>Ангелина Пой</a>
+                                                                                        </h6>
+                                                                                        <small>Задано 10 часов назад</small>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <h5>Как я могу исправить эту ошибку?</h5>
+                                                                            <p className="mb-2">
+                                                                                Как это так контрастировало, о, оценочный инструмент. Размер
+                                                                                как тело, у кого-то было. Являются ли просмотры поведения мальчика минутами
+                                                                                гарантией расходов? Терпимое поведение может допустить
+                                                                                дочерей, обижающих ее, спрашивать своих. Эффект похвалы желает
+                                                                                изменить путь и любой желаемый. Живое использование выглядело последним
+                                                                                уважением. Он делает это частью большего в конце.
+                                                                            </p>
+                                                                            <button className='btn btn-primary btn-sm mb-3 mt-3'>Присоединиться к беседе <i className='fas fa-arrow-right'></i></button>
+                                                                        </div>
+
+                                                                        <div className="shadow rounded-3 p-3">
+                                                                            <div className="d-sm-flex justify-content-sm-between mb-3">
+                                                                                <div className="d-flex align-items-center">
+                                                                                    <div className="avatar avatar-sm flex-shrink-0">
+                                                                                        <img
+                                                                                            src="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-2.jpg"
+                                                                                            className="avatar-img rounded-circle"
+                                                                                            alt="avatar"
+                                                                                            style={{ width: "60px", height: "60px", borderRadius: "50%", objectFit: "cover" }}
+                                                                                        />
+                                                                                    </div>
+                                                                                    <div className="ms-2">
+                                                                                        <h6 className="mb-0">
+                                                                                            <a href="#" className='text-decoration-none text-dark'>Ангелина Пой</a>
+                                                                                        </h6>
+                                                                                        <small>Задано 10 часов назад</small>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <h5>Как я могу исправить эту ошибку?</h5>
+                                                                            <p className="mb-2">
+                                                                                Как это так контрастировало, о, оценочный инструмент. Размер
+                                                                                как тело, у кого-то было. Являются ли просмотры поведения мальчика минутами
+                                                                                гарантией расходов? Терпимое поведение может допустить
+                                                                                дочерей, обижающих ее, спрашивать своих. Эффект похвалы желает
+                                                                                изменить путь и любой желаемый. Живое использование выглядело последним
+                                                                                уважением. Он делает это частью большего в конце.
+                                                                            </p>
+                                                                            <button className='btn btn-primary btn-sm mb-3 mt-3'>Присоединиться к беседе <i className='fas fa-arrow-right'></i></button>
+                                                                        </div>
+
+                                                                        <div className="border p-2 p-sm-4 rounded-3">
+                                                                            <ul className="list-unstyled mb-0" style={{ overflowY: "scroll", height: "500px" }}>
+                                                                                <li className="comment-item mb-3">
+                                                                                    <div className="d-flex">
+                                                                                        <div className="avatar avatar-sm flex-shrink-0">
+                                                                                            <a href="#">
+                                                                                                <img className="avatar-img rounded-circle" src="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-3.jpg" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover" }} alt="womans image" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div className="ms-2">
+                                                                                            {/* Comment by */}
+                                                                                            <div className="bg-light p-3 rounded w-100">
+                                                                                                <div className="d-flex w-100 justify-content-center">
+                                                                                                    <div className="me-2 ">
+                                                                                                        <h6 className="mb-1 lead fw-bold">
+                                                                                                            <a href="#!" className='text-decoration-none text-dark'> Луис Фергюсон </a><br />
+                                                                                                            <span style={{ fontSize: "12px", color: "gray" }}>5 часов назад</span>
+                                                                                                        </h6>
+                                                                                                        <p className="mb-0 mt-3  ">Удалены требования к счету расходов
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+
+                                                                                <li className="comment-item mb-3">
+                                                                                    <div className="d-flex">
+                                                                                        <div className="avatar avatar-sm flex-shrink-0">
+                                                                                            <a href="#">
+                                                                                                <img className="avatar-img rounded-circle" src="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-3.jpg" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover" }} alt="womans image" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div className="ms-2">
+                                                                                            {/* Comment by */}
+                                                                                            <div className="bg-light p-3 rounded w-100">
+                                                                                                <div className="d-flex w-100 justify-content-center">
+                                                                                                    <div className="me-2 ">
+                                                                                                        <h6 className="mb-1 lead fw-bold">
+                                                                                                            <a href="#!" className='text-decoration-none text-dark'> Луис Фергюсон </a><br />
+                                                                                                            <span style={{ fontSize: "12px", color: "gray" }}>5 часов назад</span>
+                                                                                                        </h6>
+                                                                                                        <p className="mb-0 mt-3  ">Удалены требования к счету расходов из здания Дебби в зале города Так с
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+
+                                                                                <li className="comment-item mb-3">
+                                                                                    <div className="d-flex">
+                                                                                        <div className="avatar avatar-sm flex-shrink-0">
+                                                                                            <a href="#">
+                                                                                                <img className="avatar-img rounded-circle" src="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-3.jpg" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover" }} alt="womans image" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div className="ms-2">
+                                                                                            {/* Comment by */}
+                                                                                            <div className="bg-light p-3 rounded w-100">
+                                                                                                <div className="d-flex w-100 justify-content-center">
+                                                                                                    <div className="me-2 ">
+                                                                                                        <h6 className="mb-1 lead fw-bold">
+                                                                                                            <a href="#!" className='text-decoration-none text-dark'> Луис Фергюсон </a><br />
+                                                                                                            <span style={{ fontSize: "12px", color: "gray" }}>5 часов назад</span>
+                                                                                                        </h6>
+                                                                                                        <p className="mb-0 mt-3  ">Удалены требования к счету расходов
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+
+                                                                                <li className="comment-item mb-3">
+                                                                                    <div className="d-flex">
+                                                                                        <div className="avatar avatar-sm flex-shrink-0">
+                                                                                            <a href="#">
+                                                                                                <img className="avatar-img rounded-circle" src="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-3.jpg" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover" }} alt="womans image" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div className="ms-2">
+                                                                                            {/* Comment by */}
+                                                                                            <div className="bg-light p-3 rounded w-100">
+                                                                                                <div className="d-flex w-100 justify-content-center">
+                                                                                                    <div className="me-2 ">
+                                                                                                        <h6 className="mb-1 lead fw-bold">
+                                                                                                            <a href="#!" className='text-decoration-none text-dark'> Луис Фергюсон </a><br />
+                                                                                                            <span style={{ fontSize: "12px", color: "gray" }}>5 часов назад</span>
+                                                                                                        </h6>
+                                                                                                        <p className="mb-0 mt-3  ">Удалены требования к счету расходов
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+
+                                                                            <form class="w-100 d-flex">
+                                                                                <textarea class="one form-control pe-4 bg-light w-75" id="autoheighttextarea" rows="1" placeholder="Напишите сообщение..."></textarea>
+                                                                                <button class="btn btn-primary ms-2 mb-0 w-25" type="button">Отправить <i className='fas fa-paper-plane'></i></button>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            className="tab-pane fade"
+                                                            id="course-pills-4"
+                                                            role="tabpanel"
+                                                            aria-labelledby="course-pills-tab-4"
+                                                        >
+                                                            <div className="card">
+                                                                {/* Card header */}
+                                                                <div className="card-header border-bottom p-0 pb-3">
+                                                                    {/* Title */}
+                                                                    <h4 className="mb-3 p-3">Оставить отзыв</h4>
+                                                                    <div className="mt-2">
+                                                                        <form className="row g-3 p-3">
+
+                                                                            {/* Rating */}
+                                                                            <div className="col-12 bg-light-input">
+                                                                                <select
+                                                                                    id="inputState2"
+                                                                                    className="form-select js-choice"
+                                                                                >
+                                                                                    <option selected="">★★★★★ (5/5)</option>
+                                                                                    <option>★★★★☆ (4/5)</option>
+                                                                                    <option>★★★☆☆ (3/5)</option>
+                                                                                    <option>★★☆☆☆ (2/5)</option>
+                                                                                    <option>★☆☆☆☆ (1/5)</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            {/* Message */}
+                                                                            <div className="col-12 bg-light-input">
+                                                                                <textarea
+                                                                                    className="form-control"
+                                                                                    id="exampleFormControlTextarea1"
+                                                                                    placeholder="Ваш отзыв"
+                                                                                    rows={3}
+                                                                                    defaultValue={""}
+                                                                                />
+                                                                            </div>
+                                                                            {/* Button */}
+                                                                            <div className="col-12">
+                                                                                <button type="submit" className="btn btn-primary mb-0">
+                                                                                    Оставить отзыв
+                                                                                </button>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
                                                     </ul>
                                                 </div>
                                                 {/* Tabs END */}

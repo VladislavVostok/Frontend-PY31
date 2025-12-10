@@ -52,15 +52,15 @@ function Earning() {
             <div className="col-lg-9 col-md-8 col-12">
               <div className="card mb-4">
                 <div className="card-body">
-                  <h3 className="mb-0">Earnings</h3>
+                  <h3 className="mb-0">Доходы</h3>
                   <p className="mb-0">
-                    You have full control to manage your own account setting.
+                    У вас есть полный контроль над управлением настройками вашей учетной записи.
                   </p>
                 </div>
               </div>
               <div className="card mb-4">
                 <div className="card-header d-flex justify-content-between align-items-center">
-                  <h4 className="mb-0">Earnings</h4>
+                  <h4 className="mb-0">Доходы</h4>
                   <div className="dropdown dropstart">
                     <a
                       className="btn-icon btn btn-ghost btn-sm rounded-circle"
@@ -76,12 +76,12 @@ function Earning() {
                       className="dropdown-menu dropdown-menu-end"
                       aria-labelledby="paymentDropdown"
                     >
-                      <span className="dropdown-header">Setting</span>
+                      <span className="dropdown-header">Настройки</span>
                       <a className="dropdown-item" href="#">
-                        30 Days
+                        30 дней
                       </a>
                       <a className="dropdown-item" href="#">
-                        2 Months
+                        2 месяца
                       </a>
                     </div>
                   </div>
@@ -94,7 +94,7 @@ function Earning() {
                         <h3 className="display-4 fw-bold mt-3 mb-0">
                           ${stats.total_revenue?.toFixed(2)}
                         </h3>
-                        <span>Monthly Earnings (Jan)</span>
+                        <span>Ежемесячный доход (январь)</span>
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-12 col-12 mb-3 mb-lg-0">
@@ -103,7 +103,7 @@ function Earning() {
                         <h3 className="display-4 fw-bold mt-3 mb-0">
                           ${stats.monthly_revenue?.toFixed(2)}
                         </h3>
-                        <span>Your Revenue</span>
+                        <span>Ваш доход</span>
                       </div>
                     </div>
                   </div>
@@ -112,16 +112,16 @@ function Earning() {
               {/* Card */}
               <div className="card mb-4">
                 <div className="card-header border-bottom-0">
-                  <h3 className="mb-0 h4">Best Selling Courses</h3>
+                  <h3 className="mb-0 h4">Самые продаваемые курсы</h3>
                 </div>
                 {/* Table */}
                 <div className="table-responsive">
                   <table className="table mb-0 text-nowrap table-hover table-centered text-nowrap">
                     <thead className="table-light">
                       <tr>
-                        <th>Courses</th>
-                        <th>Sales</th>
-                        <th>Amount</th>
+                        <th>Курсы</th>
+                        <th>Продажи</th>
+                        <th>Сумма</th>
                         <th />
                       </tr>
                     </thead>
@@ -168,14 +168,14 @@ function Earning() {
                                 className="dropdown-menu"
                                 aria-labelledby="courseDropdown1"
                               >
-                                <span className="dropdown-header">Setting</span>
+                                <span className="dropdown-header">Настройки</span>
                                 <a className="dropdown-item" href="#">
                                   <i className="fe fe-edit dropdown-item-icon" />
-                                  Edit
+                                  Редактировать
                                 </a>
                                 <a className="dropdown-item" href="#">
                                   <i className="fe fe-trash dropdown-item-icon" />
-                                  Remove
+                                  Удалить
                                 </a>
                               </span>
                             </span>
@@ -190,33 +190,33 @@ function Earning() {
               <div className="card mb-4">
                 {/* Card header */}
                 <div className="card-header border-bottom-0">
-                  <h3 className="h4 mb-3">Earning History</h3>
+                  <h3 className="h4 mb-3">История доходов</h3>
                 </div>
                 {/* Table */}
                 <div className="table-responsive">
                   <table className="table mb-0">
                     <thead className="table-light">
                       <tr>
-                        <th>Month</th>
-                        <th>Amount</th>
+                        <th>Месяц</th>
+                        <th>Сумма</th>
                       </tr>
                     </thead>
                     <tbody>
                       {earning?.map((e, index) => (
                         <tr key={index}>
                           <td>
-                            {e.month === 1 && "January"}
-                            {e.month === 2 && "February"}
-                            {e.month === 3 && "March"}
-                            {e.month === 4 && "April"}
-                            {e.month === 5 && "May"}
-                            {e.month === 6 && "June"}
-                            {e.month === 7 && "July"}
-                            {e.month === 8 && "August"}
-                            {e.month === 9 && "Sepetember"}
-                            {e.month === 10 && "OCtober"}
-                            {e.month === 11 && "November"}
-                            {e.month === 12 && "December"}
+                            {e.month === 1 && "Январь"}
+                            {e.month === 2 && "Февраль"}
+                            {e.month === 3 && "Март"}
+                            {e.month === 4 && "Апрель"}
+                            {e.month === 5 && "Май"}
+                            {e.month === 6 && "Июнь"}
+                            {e.month === 7 && "Июль"}
+                            {e.month === 8 && "Август"}
+                            {e.month === 9 && "Сентябрь"}
+                            {e.month === 10 && "Октябрь"}
+                            {e.month === 11 && "Ноябрь"}
+                            {e.month === 12 && "Декабрь"}
                           </td>
                           <td>${e.total_earning?.toFixed(2)}</td>
                         </tr>

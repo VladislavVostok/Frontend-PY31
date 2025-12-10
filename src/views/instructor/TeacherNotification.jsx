@@ -46,7 +46,7 @@ function TeacherNotification() {
         fetchNoti();
         Toast().fire({
           icon: "success",
-          title: "Notication Seen",
+          title: "Уведомление просмотрено",
         });
       });
   };
@@ -68,8 +68,8 @@ function TeacherNotification() {
                 {/* Card header */}
                 <div className="card-header d-lg-flex align-items-center justify-content-between">
                   <div className="mb-3 mb-lg-0">
-                    <h3 className="mb-0">Notifications</h3>
-                    <span>Manage all your notifications from here</span>
+                    <h3 className="mb-0">Уведомления</h3>
+                    <span>Управляйте всеми своими уведомлениями здесь</span>
                   </div>
                 </div>
                 {/* Card body */}
@@ -92,7 +92,7 @@ function TeacherNotification() {
                             <div className="mt-2">
                               <p className="mt-1">
                                 <span className="me-2 fw-bold">
-                                  Date:{" "}
+                                  Дата:{" "}
                                   <span className="fw-light">
                                     {moment(n.date).format("DD MMM, YYYY")}
                                   </span>
@@ -104,7 +104,8 @@ function TeacherNotification() {
                                   type="button"
                                   onClick={() => handleMarkAsSeen(n.id)}
                                 >
-                                  Mark as Seen <i className="fas fa-check"></i>
+                                  Отметить как просмотренное{" "}
+                                  <i className="fas fa-check"></i>
                                 </button>
                               </p>
                             </div>
@@ -113,7 +114,7 @@ function TeacherNotification() {
                       </li>
                     ))}
 
-                    {noti?.length < 1 && <p>No notifications</p>}
+                    {noti?.length < 1 && <p>Нет уведомлений</p>}
                   </ul>
                 </div>
               </div>

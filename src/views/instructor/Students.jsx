@@ -37,8 +37,8 @@ function Students() {
                 {/* Card body */}
                 <div className="p-4 d-flex justify-content-between align-items-center">
                   <div>
-                    <h3 className="mb-0">Students</h3>
-                    <span>Meet people taking your course.</span>
+                    <h3 className="mb-0">Студенты</h3>
+                    <span>Познакомьтесь с людьми, проходящими ваш курс.</span>
                   </div>
                   {/* Nav */}
                 </div>
@@ -68,7 +68,7 @@ function Students() {
                           </p>
                         </div>
                         <div className="d-flex justify-content-between py-2 mt-4 fs-6">
-                          <span>Enrolled</span>
+                          <span>Зачислен</span>
                           <span className="text-dark">
                             {moment(s.date).format("DD MMM YYYY")}
                           </span>

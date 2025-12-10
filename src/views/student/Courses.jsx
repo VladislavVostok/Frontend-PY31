@@ -56,17 +56,17 @@ function Courses() {
             <div className="col-lg-9 col-md-8 col-12">
               <h4 className="mb-0 mb-4">
                 {" "}
-                <i className="fas fa-shopping-cart"></i> My Courses
+                <i className="fas fa-shopping-cart"></i> Мои курсы
               </h4>
 
-              {fetching === true && <p className="mt-3 p-3">Loading...</p>}
+              {fetching === true && <p className="mt-3 p-3">Загрузка...</p>}
 
               {fetching === false && (
                 <div className="card mb-4">
                   <div className="card-header">
-                    <h3 className="mb-0">Courses</h3>
+                    <h3 className="mb-0">Курсы</h3>
                     <span>
-                      Start watching courses now from your dashboard page.
+                      Начните смотреть курсы прямо сейчас со страницы вашей панели управления.
                     </span>
                   </div>
                   <div className="card-body">
@@ -75,7 +75,7 @@ function Courses() {
                         <input
                           type="search"
                           className="form-control"
-                          placeholder="Search Your Courses"
+                          placeholder="Поиск ваших курсов"
                           onChange={handleSearch}
                         />
                       </div>
@@ -85,11 +85,11 @@ function Courses() {
                     <table className="table mb-0 text-nowrap table-hover table-centered text-nowrap">
                       <thead className="table-light">
                         <tr>
-                          <th>Courses</th>
-                          <th>Date Enrolled</th>
-                          <th>Lectures</th>
-                          <th>Completed</th>
-                          <th>Action</th>
+                          <th>Курсы</th>
+                          <th>Дата зачисления</th>
+                          <th>Лекции</th>
+                          <th>Завершено</th>
+                          <th>Действие</th>
                           <th />
                         </tr>
                       </thead>
@@ -156,14 +156,14 @@ function Courses() {
                             <td>
                               {c.completed_lesson?.length < 1 && (
                                 <button className="btn btn-success btn-sm mt-3">
-                                  start Course
+                                  Начать курс
                                   <i className="fas fa-arrow-right ms-2"></i>
                                 </button>
                               )}
 
                               {c.completed_lesson?.length > 0 && (
                                 <button className="btn btn-primary btn-sm mt-3">
-                                  Continue Course
+                                  Продолжить курс
                                   <i className="fas fa-arrow-right ms-2"></i>
                                 </button>
                               )}
@@ -172,7 +172,7 @@ function Courses() {
                         ))}
 
                         {courses?.length < 1 && (
-                          <p className="mt-4 p-4">No courses found</p>
+                          <p className="mt-4 p-4">Курсы не найдены</p>
                         )}
                       </tbody>
                     </table>

@@ -61,7 +61,7 @@ function Dashboard() {
               <div className="row mb-4">
                 <h4 className="mb-0 mb-4">
                   {" "}
-                  <i className="bi bi-grid-fill"></i> Dashboard
+                  <i className="bi bi-grid-fill"></i> Панель управления
                 </h4>
                 {/* Counter item */}
 
@@ -76,7 +76,7 @@ function Dashboard() {
                           {stats.total_courses}
                         </h5>
                       </div>
-                      <p className="mb-0 h6 fw-light">Total Courses</p>
+                      <p className="mb-0 h6 fw-light">Всего курсов</p>
                     </div>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ function Dashboard() {
                           {stats.total_students}
                         </h5>
                       </div>
-                      <p className="mb-0 h6 fw-light">Total Students</p>
+                      <p className="mb-0 h6 fw-light">Всего студентов</p>
                     </div>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ function Dashboard() {
                           ${stats.total_revenue?.toFixed(2)}
                         </h5>
                       </div>
-                      <p className="mb-0 h6 fw-light">Total Revenue</p>
+                      <p className="mb-0 h6 fw-light">Общий доход</p>
                     </div>
                   </div>
                 </div>
@@ -116,10 +116,10 @@ function Dashboard() {
 
               <div className="card mb-4">
                 <div className="card-header">
-                  <h3 className="mb-0">Courses</h3>
+                  <h3 className="mb-0">Курсы</h3>
                   <span>
-                    Manage your courses from here, earch, view, edit or delete
-                    courses.
+                  Управляйте своими курсами отсюда, просматривайте, редактируйте или удаляйте их.
+                    курсы.
                   </span>
                 </div>
                 <div className="card-body">
@@ -128,7 +128,7 @@ function Dashboard() {
                       <input
                         type="search"
                         className="form-control"
-                        placeholder="Search Your Courses"
+                        placeholder="Поиск курсов"
                         onChange={handleSearch}
                       />
                     </div>
@@ -138,12 +138,12 @@ function Dashboard() {
                   <table className="table mb-0 text-nowrap table-hover table-centered text-nowrap">
                     <thead className="table-light">
                       <tr>
-                        <th>Courses</th>
-                        <th>Enrolled</th>
-                        <th>Level</th>
-                        <th>Status</th>
-                        <th>Date Created</th>
-                        <th>Action</th>
+                        <th>Курсы</th>
+                        <th>Записано</th>
+                        <th>Уровень</th>
+                        <th>Статус</th>
+                        <th>Дата создания</th>
+                        <th>Действие</th>
                         <th />
                       </tr>
                     </thead>
@@ -207,7 +207,7 @@ function Dashboard() {
                           </td>
                           <td>
                             <p className="mt-3 badge bg-warning text-dark">
-                              Intermediate
+                              Средний
                             </p>
                           </td>
                           <td>

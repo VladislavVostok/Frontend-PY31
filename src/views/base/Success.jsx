@@ -26,7 +26,7 @@ function Success() {
     formdata.append("session_id", sessionId);
     formdata.append("paypal_order_id", paypalOrderId);
 
-    setOrderMessage("Processing Payment");
+    setOrderMessage("Обработка платежа");
 
     try {
       apiInstance.post(`payment/payment-sucess/`, formdata).then((res) => {
@@ -48,7 +48,7 @@ function Success() {
         <div className="container position-relative">
           <div className="row g-5 align-items-center justify-content-center">
             {/* Payment Successfull */}
-            {orderMessage === "Payment Successfull" && (
+            {orderMessage === "Платеж успешно завершен" && (
               <>
                 <div className="col-lg-5">
                   <h1 className="text-success">Зачисление прошло успешно!</h1>
@@ -74,7 +74,7 @@ function Success() {
             )}
 
             {/* Already Paid */}
-            {orderMessage === "Already Paid" && (
+            {orderMessage === "Уже оплачено" && (
               <>
                 <div className="col-lg-5">
                   <h1 className="text-success">Уже оплачено</h1>
@@ -100,7 +100,7 @@ function Success() {
             )}
 
             {/* Processing */}
-            {orderMessage === "Processing Payment" && (
+            {orderMessage === "Обработка платежа" && (
               <>
                 <div className="col-lg-5">
                   <h1 className="text-warning">
@@ -124,10 +124,10 @@ function Success() {
             )}
 
             {/* Failed */}
-            {orderMessage === "Payment Failed" && (
+            {orderMessage === "Платеж не прошел" && (
               <>
                 <div className="col-lg-5">
-                  <h1 className="text-danger">Payment Failed 😔</h1>
+                  <h1 className="text-danger">Платеж не прошел 😔</h1>
                   <p>
                   К сожалению, Ваш платеж не прошел. Повторите попытку.
                   </p>

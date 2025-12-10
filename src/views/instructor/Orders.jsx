@@ -38,9 +38,9 @@ function Orders() {
               <div className="card mb-4">
                 {/* Card header */}
                 <div className="card-header border-bottom-0">
-                  <h3 className="mb-0">Orders</h3>
+                  <h3 className="mb-0">Заказы</h3>
                   <span>
-                    Order Dashboard is a quick overview of all current orders.
+                    Панель заказов - это краткий обзор всех текущих заказов.
                   </span>
                 </div>
                 {/* Table */}
@@ -48,10 +48,10 @@ function Orders() {
                   <table className="table mb-0 text-nowrap table-hover table-centered">
                     <thead className="table-light">
                       <tr>
-                        <th>Courses</th>
-                        <th>Amount</th>
-                        <th>Invoice</th>
-                        <th>Date</th>
+                        <th>Курсы</th>
+                        <th>Сумма</th>
+                        <th>Счет</th>
+                        <th>Дата</th>
                       </tr>
                     </thead>
                     <tbody>

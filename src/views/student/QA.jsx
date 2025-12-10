@@ -19,19 +19,19 @@ function QA() {
             {/* Sidebar Here */}
             <Sidebar />
             <div className="col-lg-9 col-md-8 col-12">
-              <h4 className="mb-0 mb-4"> <i className='fas fa-envelope'></i> Question and Answer</h4>
+              <h4 className="mb-0 mb-4"> <i className='fas fa-envelope'></i> Вопросы и ответы</h4>
 
               <div className="card mb-4">
                 <div className="card-header">
-                  <span>All Questions and Answers are listed here</span>
+                  <span>Все вопросы и ответы перечислены здесь</span>
                 </div>
                 <div className="table-responsive overflow-y-hidden">
                   <table className="table mb-0 text-nowrap table-hover table-centered text-nowrap">
                     <thead className="table-light">
                       <tr>
-                        <th>Courses</th>
-                        <th>Questions</th>
-                        <th>Action</th>
+                        <th>Курсы</th>
+                        <th>Вопросы</th>
+                        <th>Действие</th>
                         <th />
                       </tr>
                     </thead>
@@ -52,7 +52,7 @@ function QA() {
                             <div className="ms-3">
                               <h4 className="mb-1 h5">
                                 <a href="#" className="text-inherit text-decoration-none text-dark">
-                                  Angular Masterclass Course
+                                  Курс Angular Masterclass
                                 </a>
                               </h4>
                             </div>
@@ -60,7 +60,7 @@ function QA() {
                         </td>
                         <td><p className='mt-3'>5</p></td>
                         <td>
-                          <Link to={`/student/question-answer/course_id/`} className='btn btn-primary btn-sm mt-3'>Join Conversation <i className='fas fa-arrow-right'></i></Link>
+                          <Link to={`/student/question-answer/course_id/`} className='btn btn-primary btn-sm mt-3'>Присоединиться к беседе <i className='fas fa-arrow-right'></i></Link>
                         </td>
                       </tr>
                       <tr>
@@ -79,7 +79,7 @@ function QA() {
                             <div className="ms-3">
                               <h4 className="mb-1 h5">
                                 <a href="#" className="text-inherit text-decoration-none text-dark">
-                                  Learn React for Beginners
+                                  Изучите React для начинающих
                                 </a>
                               </h4>
                             </div>
@@ -87,7 +87,7 @@ function QA() {
                         </td>
                         <td><p className='mt-3'>5</p></td>
                         <td>
-                          <Link to={`/student/question-answer/course_id/`} className='btn btn-primary btn-sm mt-3'>Join Conversation <i className='fas fa-arrow-right'></i></Link>
+                          <Link to={`/student/question-answer/course_id/`} className='btn btn-primary btn-sm mt-3'>Присоединиться к беседе <i className='fas fa-arrow-right'></i></Link>
                         </td>
                       </tr>
                     </tbody>

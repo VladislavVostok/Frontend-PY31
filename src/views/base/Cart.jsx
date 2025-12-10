@@ -48,7 +48,7 @@ function Cart() {
         fetchCartItem();
         Toast().fire({
           icon: "success",
-          title: "Cart Item Deleted",
+          title: "Товар удален из корзины",
         });
         // Set cart count after adding to cart
         apiInstance.get(`course/cart-list/${CartId()}/`).then((res) => {
@@ -129,7 +129,7 @@ function Cart() {
               {/* Main content START */}
               <div className="col-lg-8 mb-4 mb-sm-0">
                 <div className="p-4 shadow rounded-3">
-                  <h5 className="mb-0 mb-3">Cart Items ({cart?.length})</h5>
+                  <h5 className="mb-0 mb-3">Товары в корзине ({cart?.length})</h5>
 
                   <div className="table-responsive border-0 rounded-3">
                     <table className="table align-middle p-4 mb-0">
@@ -176,7 +176,7 @@ function Cart() {
                         ))}
 
                         {cart?.length < 1 && (
-                          <p className="mt-1 p-1">Нет товара в Корзине</p>
+                          <p className="mt-1 p-1">Нет товаров в корзине</p>
                         )}
                       </tbody>
                     </table>
@@ -198,7 +198,7 @@ function Cart() {
                         type="text"
                         className="form-control"
                         id="yourName"
-                        placeholder="Name"
+                        placeholder="Имя"
                         name="full_name"
                         value={bioData.full_name}
                         onChange={handleBioDataChange}
@@ -213,7 +213,7 @@ function Cart() {
                         type="email"
                         className="form-control"
                         id="emailInput"
-                        placeholder="Email"
+                        placeholder="Почта"
                         name="email"
                         value={bioData.email}
                         onChange={handleBioDataChange}
@@ -229,7 +229,7 @@ function Cart() {
                         type="text"
                         className="form-control"
                         id="mobileNumber"
-                        placeholder="Country"
+                        placeholder="Страна"
                         name="country"
                         value={bioData.country}
                         onChange={handleBioDataChange}
@@ -242,7 +242,7 @@ function Cart() {
 
               <div className="col-lg-4">
                 <div className="p-4 shadow rounded-3">
-                  <h4 className="mb-3">Cart Total</h4>
+                  <h4 className="mb-3">Итог корзины</h4>
                   <ul class="list-group mb-3">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                     Подытог

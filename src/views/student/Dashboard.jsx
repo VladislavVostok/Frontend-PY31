@@ -64,7 +64,7 @@ function Dashboard() {
               <div className="row mb-4">
                 <h4 className="mb-0 mb-4">
                   {" "}
-                  <i className="bi bi-grid-fill"></i> Dashboard
+                  <i className="bi bi-grid-fill"></i> Панель управления
                 </h4>
                 {/* Counter item */}
 
@@ -79,7 +79,7 @@ function Dashboard() {
                           {stats.total_courses}
                         </h5>
                       </div>
-                      <p className="mb-0 h6 fw-light">Total Courses</p>
+                      <p className="mb-0 h6 fw-light">Всего курсов</p>
                     </div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ function Dashboard() {
                           {stats.completed_lessons}
                         </h5>
                       </div>
-                      <p className="mb-0 h6 fw-light">Complete lessons</p>
+                      <p className="mb-0 h6 fw-light">Завершенные уроки</p>
                     </div>
                   </div>
                 </div>
@@ -113,20 +113,20 @@ function Dashboard() {
                           {stats.achieved_certificates}
                         </h5>
                       </div>
-                      <p className="mb-0 h6 fw-light">Achieved Certificates</p>
+                      <p className="mb-0 h6 fw-light">Полученные сертификаты</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {fetching === true && <p className="mt-3 p-3">Loading...</p>}
+              {fetching === true && <p className="mt-3 p-3">Загрузка...</p>}
 
               {fetching === false && (
                 <div className="card mb-4">
                   <div className="card-header">
-                    <h3 className="mb-0">Courses</h3>
+                    <h3 className="mb-0">Курсы</h3>
                     <span>
-                      Start watching courses now from your dashboard page.
+                      Начните смотреть курсы прямо сейчас со страницы вашей панели управления.
                     </span>
                   </div>
                   <div className="card-body">
@@ -135,7 +135,7 @@ function Dashboard() {
                         <input
                           type="search"
                           className="form-control"
-                          placeholder="Search Your Courses"
+                          placeholder="Поиск ваших курсов"
                           onChange={handleSearch}
                         />
                       </div>
@@ -145,11 +145,11 @@ function Dashboard() {
                     <table className="table mb-0 text-nowrap table-hover table-centered text-nowrap">
                       <thead className="table-light">
                         <tr>
-                          <th>Courses</th>
-                          <th>Date Enrolled</th>
-                          <th>Lectures</th>
-                          <th>Completed</th>
-                          <th>Action</th>
+                          <th>Курсы</th>
+                          <th>Дата зачисления</th>
+                          <th>Лекции</th>
+                          <th>Завершено</th>
+                          <th>Действие</th>
                           <th />
                         </tr>
                       </thead>
@@ -219,7 +219,7 @@ function Dashboard() {
                                   to={`/student/courses/${c.enrollment_id}/`}
                                   className="btn btn-success btn-sm mt-3"
                                 >
-                                  start Course
+                                  Начать курс
                                   <i className="fas fa-arrow-right ms-2"></i>
                                 </Link>
                               )}
@@ -229,7 +229,7 @@ function Dashboard() {
                                   to={`/student/courses/${c.enrollment_id}/`}
                                   className="btn btn-primary btn-sm mt-3"
                                 >
-                                  Continue Course
+                                  Продолжить курс
                                   <i className="fas fa-arrow-right ms-2"></i>
                                 </Link>
                               )}
@@ -238,7 +238,7 @@ function Dashboard() {
                         ))}
 
                         {courses?.length < 1 && (
-                          <p className="mt-4 p-4">No courses found</p>
+                          <p className="mt-4 p-4">Курсы не найдены</p>
                         )}
                       </tbody>
                     </table>
